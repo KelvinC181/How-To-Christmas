@@ -1,0 +1,32 @@
+/* google font import */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* css variables */
+:root {
+    --primary-color: #7A231D;
+    /*dark red*/
+    --secondary-color: #B43B2B;
+    /*red*/
+    --feature-color-1: #4D5D45;
+    /*medium dark green*/
+    --feature-color-2: #667256;
+    /*light dark green*/
+    --background-color: #FFF8DE;
+    /*light yellow*/
+    --font-color: #474B41;
+    /*dark green*/
+    --title-font: "Lobster", serif;
+    --primary-font: "Playfair Display", serif;
+    --secondary-font: "Roboto", sans-serif;;
+}
+
+/* general styles */
+
+/* home */
+
+/* recipe */
+
+/* movies */
+
+/* gifts */
+    

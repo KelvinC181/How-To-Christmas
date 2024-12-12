@@ -26,6 +26,10 @@
 }
 
 /* general styles */
+
+body {
+  background-color: var(--very-light-cream)!important;
+}
 /* navbar */
 .navbar {
   background-color: var(--primary-color) !important;

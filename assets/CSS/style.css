@@ -60,6 +60,66 @@
 
 /* recipe */
 
+#recipe-body {
+  background-color: #FFF8DE;
+  height: 100vh;
+}
+
+/* Page Header */
+
+#recipe-body > header {
+  text-align: center;
+  background-color: #FFF8DE;
+}
+
+#recipe-body .fa-solid {
+  font-size: larger;
+  margin-bottom: 10px;
+}
+
+/* Recipe Divs */
+
+#recipe-container {
+  width: 100%;
+  background-color: #FFF8DE;
+  padding-bottom: 10px;
+}
+
+#recipe-body .card {
+  margin: 0 auto 10px;
+  max-width: 1000px;
+}
+
+#recipe-body img {
+  max-width: 70%;
+}
+
+#recipe-body li {
+  margin: 5px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1024px) {
+  #recipe-body .flex-container {
+      display: flex;
+  }
+
+  #recipe-body .ingredients {
+      margin-left: 20px;
+  }
+
+  #recipe-body img {
+      max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #recipe-body .card {
+      margin: 0 5px 10px;
+  }
+}
+
 /* movies */
 
 /* gifts */

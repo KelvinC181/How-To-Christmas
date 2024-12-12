@@ -101,7 +101,7 @@ class ChristmasScene {
           console.error(`Error loading ${url}`);
       }
 
-      gltfLoader.load('tavern_in_snow.glb', 
+      gltfLoader.load('assets/models/tavern_in_snow.glb', 
           (gltf) => {
               this.model = gltf.scene
               this.model.position.set(0, -2, -10)

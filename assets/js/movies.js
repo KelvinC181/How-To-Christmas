@@ -18,7 +18,6 @@ async function displayChristmasMovies() {
       }
       
       const data = await response.json();
-      console.log('Movies data:', data); // Debug log
 
       if (data.results && data.results.length > 0) {
           data.results.forEach(movie => {

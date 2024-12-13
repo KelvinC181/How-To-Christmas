@@ -16,6 +16,7 @@ class ChristmasScene {
         this.setupFog()
         this.setupResizeHandler()
         this.loadAssets()
+        this.firstRenderComplete = false;
     }
 
     setupCanvas() {
@@ -212,6 +213,13 @@ class ChristmasScene {
         this.textMesh.quaternion.copy(this.camera.quaternion)
     }
 
+    hideOverlay() {
+        const overlay = document.querySelector('.canvas-overlay');
+        if (overlay) {
+            overlay.classList.add('hidden');
+        }
+    }
+
     startAnimation() {
         const animate = () => {
             requestAnimationFrame(animate)
@@ -230,6 +238,12 @@ class ChristmasScene {
             }
             
             this.renderer.render(this.scene, this.camera)
+
+            // Hide overlay after first successful render
+            if (!this.firstRenderComplete) {
+                this.firstRenderComplete = true;
+                setTimeout(() => this.hideOverlay(), 2000); // Small delay to ensure scene is visible
+            }
         }
         
         animate()

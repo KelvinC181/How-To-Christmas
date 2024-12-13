@@ -39,14 +39,15 @@ async function displayChristmasMovies() {
 
       if (data.results && data.results.length > 0) {
           data.results.forEach(movie => {
+            
+          const movieImage = movie.poster_path !== null ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`:'assets/img/movie-placeholder.webp';
               const movieCard = document.createElement('div');
               movieCard.classList.add('movie-card');
               movieCard.classList.add('w-50');
               
               movieCard.innerHTML = `
-                  <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" 
-                       alt="${movie.title}" 
-                       onerror="this.src='placeholder.jpg'"/>
+                  <img src="${movieImage}" 
+                       alt="${movie.title}"/>
                   <h2>${movie.title}</h2>
                   <p>Release Date: ${movie.release_date}</p>
                   <p>Rating: ${movie.vote_average}</p>
@@ -81,16 +82,17 @@ async function retrieveMovieDetails() {
       const movieDetails = document.querySelector('.movie-details');
       
       if (movieDetails) {
+        const movieImage = data.backdrop_path !== null ? `https://image.tmdb.org/t/p/w500${data.backdrop_path}`:'../assets/img/movie-placeholder.webp';
         // set background image for the body
-        document.body.style.backgroundImage = `url('https://image.tmdb.org/t/p/w500${data.backdrop_path}')`;
+        document.body.style.backgroundImage = `url('${movieImage}')`;
         document.body.style.backgroundSize = 'cover';
         document.body.style.backgroundPosition = 'center';
         document.body.style.backgroundAttachment = 'fixed';
           movieDetails.innerHTML = `
               <h1 class="text-white">${data.title}</h1>
-              <img src="https://image.tmdb.org/t/p/w500${data.poster_path}"
-                    alt="${data.title}"
-                    onerror="this.src='placeholder.jpg'"/>
+              <img src="${movieImage}"
+                alt="${data.title}"
+              />
               <p class="text-white">${data.overview}</p>
               <p class="text-white">Rating: ${data.vote_average}</p>
               <p class="text-white">Release Date: ${data.release_date}</p>

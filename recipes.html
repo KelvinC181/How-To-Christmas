@@ -7,7 +7,7 @@
 
   <title>How To Christmas</title>
   <!-- stylesheet -->
-  <link rel="stylesheet" href="assets/CSS/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
@@ -19,15 +19,16 @@
 
 <body id="recipe-body">
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg py-4">
     <div class="container-fluid">
+      <img class="logo" src="assets/img/logo.png" alt="">
       <a class="fs-3 navbar-brand" href="index.html">How to Christmas</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="fs-5 navbar-nav mx-auto">
+        <ul class="navbar-nav fs-4 gap-3 mx-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">
               <i class="fas fa-house me-1"></i>Home
@@ -47,7 +48,6 @@
               <i class="fas fa-face-laugh me-1"></i>Jokes
             </a>
           </li>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="recipes.html">
               <i class="fas fa-utensils me-1"></i>Recipes
@@ -62,7 +62,7 @@
   <header class="text-center">
     <h1 class="fw-bold pt-3">Christmas Recipes</h1>
     <p>
-      Share the taste of Christmas with your loved ones,<br>
+      Share the taste of Christmas with your loved ones,
       with the help of these classic festive recipes.
     </p>
   </header>
@@ -72,15 +72,35 @@
 
       Recipe ingredients and instructions for each of roast turkey,
       Yorkshire pudding, Christmas pudding, treacle sponge, and apple
-      crumble.
+      crumble..
     -->
 
   <div id="recipe-container">
 
+    <!-- Recipe Links -->
+
+    <div class="card rounded shadow-lg" id="links-container">
+      <div class="card-body text-center" id="christmas-bg">
+
+        <div class="flex-links">
+          <a href="#turkey">Roast Turkey</a>
+          <a href="#yorkshire">Yorkshire Pudding</a>
+          <a href="#pudding">Christmas Pudding</a>
+          <a href="#treacle">Treacle Sponge</a>
+          <a href="#crumble">Apple Crumble</a>
+          <a href="#wellington">Beef Wellington</a>
+          <a href="#meringue">Lemon Meringue Pie</a>
+          <a href="#lava">Chocolate Lava Cake</a>
+        </div>
+
+      </div>
+
+    </div>
+
     <!-- Roast Turkey recipe -->
 
     <div class="card rounded shadow-lg">
-      <div class="card-body">
+      <div class="card-body" id="turkey">
         <h2 class="fw-bold pb-2">Roast Turkey</h2>
 
         <div class="flex-container">
@@ -149,7 +169,7 @@
     <!-- Yorkshire Pudding recipe -->
 
     <div class="card rounded shadow-lg">
-      <div class="card-body">
+      <div class="card-body" id="yorkshire">
         <h2 class="fw-bold pb-2">Yorkshire Pudding</h2>
 
         <div class="flex-container">
@@ -199,7 +219,7 @@
     <!-- Christmas Pudding recipe -->
 
     <div class="card rounded shadow-lg">
-      <div class="card-body">
+      <div class="card-body" id="pudding">
         <h2 class="fw-bold pb-2">Christmas Pudding</h2>
 
         <div class="flex-container">
@@ -257,7 +277,7 @@
     <!-- Treacle Sponge recipe -->
 
     <div class="card rounded shadow-lg">
-      <div class="card-body">
+      <div class="card-body" id="treacle">
         <h2 class="fw-bold pb-2">Treacle Sponge</h2>
 
         <div class="flex-container">
@@ -309,7 +329,7 @@
     <!-- Apple Crumble recipe -->
 
     <div class="card rounded shadow-lg">
-      <div class="card-body">
+      <div class="card-body" id="crumble">
         <h2 class="fw-bold pb-2">Apple Crumble</h2>
 
         <div class="flex-container">
@@ -362,6 +382,129 @@
         </ol>
       </div>
     </div>
+<!-- Beef Wellington recipe -->
+
+<div class="card rounded shadow-lg">
+  <div class="card-body" id="wellington">
+    <h2 class="fw-bold pb-2">Beef Wellington</h2>
+
+    <div class="flex-container">
+      <!-- ChatGPT-generated image -->
+      <img class="rounded" src="assets/img/recipe_images/beef-wellington.webp" alt="beef wellington" />
+
+      <div class="ingredients">
+        <h3 class="fw-bolder">Ingredients</h3>
+
+        <ul class="ingredients-list">
+          <li>1kg beef tenderloin (center-cut)</li>
+          <li>2 tbsp olive oil</li>
+          <li>250g mushrooms, finely chopped</li>
+          <li>100g pâté (optional)</li>
+          <li>8 slices prosciutto</li>
+          <li>500g puff pastry</li>
+          <li>1 egg, beaten</li>
+          <li>Salt and pepper, to taste</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="fw-bolder pt-2">Instructions</h3>
+
+    <ol>
+      <li>Preheat oven to 200°C (400°F).</li>
+      <li>Season the beef with salt and pepper, then sear in a hot pan with olive oil for 2-3 minutes on each side until browned. Let it cool.</li>
+      <li>In the same pan, cook the chopped mushrooms over medium heat until all the moisture evaporates and they become dry. Let the mixture cool.</li>
+      <li>Spread pâté (if using) over the cooled beef, then top with the mushroom mixture.</li>
+      <li>Lay out the prosciutto slices on a sheet of plastic wrap, then place the beef on top and roll it tightly. Chill in the fridge for 10 minutes.</li>
+      <li>Roll out the puff pastry on a floured surface and wrap the beef in it. Seal the edges and brush with the beaten egg.</li>
+      <li>Bake for 25-30 minutes, or until golden brown and the internal temperature of the beef reaches 50-55°C (120-130°F) for rare, or 60°C (140°F) for medium.</li>
+      <li>Rest the Wellington for 10 minutes before slicing and serving.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- Lemon Meringue Pie recipe -->
+
+<div class="card rounded shadow-lg">
+  <div class="card-body" id="meringue">
+    <h2 class="fw-bold pb-2">Lemon Meringue Pie</h2>
+
+    <div class="flex-container">
+      <!-- ChatGPT-generated image -->
+      <img class="rounded" src="assets/img/recipe_images/lemon-meringue-pie.webp" alt="lemon meringue pie" />
+
+      <div class="ingredients">
+        <h3 class="fw-bolder">Ingredients</h3>
+
+        <ul class="ingredients-list">
+          <li>1 pre-baked pie crust</li>
+          <li>200g sugar</li>
+          <li>2 tbsp cornstarch</li>
+          <li>1/4 tsp salt</li>
+          <li>480ml water</li>
+          <li>4 large egg yolks</li>
+          <li>60g butter</li>
+          <li>1/2 cup fresh lemon juice</li>
+          <li>1 tbsp lemon zest</li>
+          <li>4 large egg whites</li>
+          <li>1/2 tsp cream of tartar</li>
+          <li>1/4 cup sugar (for meringue)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="fw-bolder pt-2">Instructions</h3>
+
+    <ol>
+      <li>Preheat oven to 180°C (350°F).</li>
+      <li>In a saucepan, whisk together the sugar, cornstarch, and salt. Gradually add the water and cook over medium heat, stirring constantly until thickened.</li>
+      <li>In a separate bowl, whisk the egg yolks, then slowly temper with the hot sugar mixture. Return everything to the saucepan and cook for 2-3 more minutes. Remove from heat and stir in butter, lemon juice, and zest.</li>
+      <li>Pour the lemon filling into the pre-baked pie crust.</li>
+      <li>In a clean bowl, beat the egg whites with cream of tartar until soft peaks form. Gradually add 1/4 cup sugar and continue to beat until stiff peaks form.</li>
+      <li>Spread the meringue over the lemon filling, sealing the edges. Bake for 10-12 minutes, or until the meringue is golden brown.</li>
+      <li>Let the pie cool before serving.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- Chocolate Lava Cake recipe -->
+
+<div class="card rounded shadow-lg">
+  <div class="card-body" id="lava">
+    <h2 class="fw-bold pb-2">Chocolate Lava Cake</h2>
+
+    <div class="flex-container">
+      <!-- ChatGPT-generated image -->
+      <img class="rounded" src="assets/img/recipe_images/chocolate-lava-cake.webp" alt="chocolate lava cake" />
+
+      <div class="ingredients">
+        <h3 class="fw-bolder">Ingredients</h3>
+
+        <ul class="ingredients-list">
+          <li>150g dark chocolate (70% cocoa)</li>
+          <li>115g butter</li>
+          <li>2 large eggs</li>
+          <li>2 egg yolks</li>
+          <li>50g sugar</li>
+          <li>1 tsp vanilla extract</li>
+          <li>30g plain flour</li>
+          <li>Butter and cocoa powder (for greasing ramekins)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="fw-bolder pt-2">Instructions</h3>
+
+    <ol>
+      <li>Preheat oven to 220°C (425°F). Grease four ramekins with butter and dust with cocoa powder.</li>
+      <li>In a heatproof bowl, melt the chocolate and butter together over simmering water, stirring until smooth.</li>
+      <li>Whisk the eggs, egg yolks, sugar, and vanilla extract until well combined. Gradually add the melted chocolate mixture and stir in the flour until smooth.</li>
+      <li>Pour the batter into the prepared ramekins, filling each about three-quarters full.</li>
+      <li>Bake for 12-14 minutes until the edges are set but the center is still soft.</li>
+      <li>Let the cakes rest for 1 minute before inverting onto plates. Serve immediately with ice cream or whipped cream.</li>
+    </ol>
+  </div>
+</div>
 
   </div> <!-- /.recipe-container -->
 
@@ -382,7 +525,7 @@
         <li class="list-inline-item pb-2">
           <a href="https://github.com/JaimieHemmings" class="team text-decoration-none" target="_blank">
             <i class="fs-5 fab fa-github"></i>
-            Jaimie Warburton
+            Jaimie Hemmings
           </a>
         </li>
         <li class="list-inline-item pb-2">
@@ -425,7 +568,7 @@
     crossorigin="anonymous"></script>
 
   <!-- custom script -->
-  <script src="assets/JS/script.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 

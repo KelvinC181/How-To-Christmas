@@ -39,8 +39,12 @@ h3 {
 }
 
 /* navbar */
+.body-class{
+  background-color: var(--background-color);
+}
 .navbar {
-  background-color: var(--primary-color) !important;
+    background-color: var(--primary-color) !important;
+    font-family: var(--title-font);
 }
 
 .navbar-brand,
@@ -679,3 +683,12 @@ footer i {
 /* movies */
 
 /* gifts */
+#gift-section h1, h2, h3, h4, h5{
+  font-family: var(--primary-font);
+}
+
+#gift-section p{
+  font-family: var(--secondary-font);
+}
+
+    

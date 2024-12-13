@@ -17,7 +17,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="body-class d-flex flex-column min-vh-100">
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark shadow-lg py-3">
     <div class="container-fluid px-0">
@@ -60,11 +60,27 @@
   </nav>
 
   <!-- main content -->
-  <div class="movie-container container d-flex flex-row flex-wrap justify-content-between py-5">
-
+  <div class="container-fluid text-center pb-3">
+    <h1 class="fw-bold pt-3">Christmas Movies</h1>
+    <div class="row py-2 justify-content-center">
+      <div class="col-12 col-lg-8">
+        <p>
+          Welcome to the Christmas Joke Generator!<br> Whether you're looking to spread some holiday cheer or add a
+          little humor to your festive gatherings, we've got you covered. Click below to discover random
+          Christmas-themed jokes that are sure to bring a smile to everyone’s face. Let the laughs and holiday spirit
+          begin!
+        </p>
+      </div>
+    </div>
+    <div class="movie-container container py-5">
+      <div id="movieRow" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Movie cards will be injected here by JavaScript -->
+      </div>
+    </div>
   </div>
+
   <!-- footer -->
-  <footer class="py-3 shadow-lg">
+  <footer class="py-3 shadow-lg mt-auto">
     <div class="container text-center">
       <p class="copyright fs-5 mb-1">&copy; 2024 How to Christmas</p>
       <p class="">All rights reserved</p>

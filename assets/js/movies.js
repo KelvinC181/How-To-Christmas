@@ -22,47 +22,51 @@ const globalVars = {
  * @returns {void}
  */
 async function displayChristmasMovies() {
-  const movieContainer = document.querySelector('.movie-container');
-  if (!movieContainer) {
-      console.error('Movie container not found');
-      return;
+  const movieRow = document.querySelector('#movieRow'); // Get the movie row to append cards
+  if (!movieRow) {
+    console.error('Movie row not found');
+    return;
   }
 
   try {
-      const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${globalVars.api.apiKey}&query=christmas`);
-      
-      if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      
-      const data = await response.json();
+    const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${globalVars.api.apiKey}&query=christmas`);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    const data = await response.json();
 
-      if (data.results && data.results.length > 0) {
-          data.results.forEach(movie => {
-            
-          const movieImage = movie.poster_path !== null ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`:'assets/img/movie-placeholder.webp';
-              const movieCard = document.createElement('div');
-              movieCard.classList.add('movie-card');
-              movieCard.classList.add('w-50');
-              
-              movieCard.innerHTML = `
-                  <img src="${movieImage}" 
-                       alt="${movie.title}"/>
-                  <h2>${movie.title}</h2>
-                  <p>Release Date: ${movie.release_date}</p>
-                  <p>Rating: ${movie.vote_average}</p>
-                  <p><a href="movies/movie.html?id=${movie.id}">View Details</a></p>
-              `;
-              movieContainer.appendChild(movieCard);
-          });
-      } else {
-          movieContainer.innerHTML = '<p>No movies found</p>';
-      }
+    if (data.results && data.results.length > 0) {
+      data.results.forEach(movie => {
+        const movieImage = movie.poster_path !== null ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'assets/img/movie-placeholder.webp';
+        
+        const movieCard = document.createElement('div');
+        movieCard.classList.add('col');
+        
+        movieCard.innerHTML = `
+          <div class="movie-card card rounded shadow-lg">
+            <img src="${movieImage}" class="card-img-top" alt="${movie.title}">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder">${movie.title}</h5>
+              <p class="card-text">Release Date: ${movie.release_date}</p>
+              <p class="card-text pb-2">Rating: ${movie.vote_average}</p>
+              <p><a href="movies/movie.html?id=${movie.id}" class="primary-btn p-2 text-decoration-none">View Details</a></p>
+            </div>
+          </div>
+        `;
+
+        movieRow.appendChild(movieCard);
+      });
+    } else {
+      movieRow.innerHTML = '<p>No movies found</p>';
+    }
   } catch (error) {
-      console.error('Error fetching movies:', error);
-      movieContainer.innerHTML = '<p>Error loading movies</p>';
+    console.error('Error fetching movies:', error);
+    movieRow.innerHTML = '<p>Error loading movies</p>';
   }
 }
+
 
 async function retrieveMovieDetails() {
   const movieId = new URLSearchParams(window.location.search).get('id');

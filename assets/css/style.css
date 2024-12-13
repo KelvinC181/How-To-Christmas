@@ -30,6 +30,10 @@ body {
   background-image: url('../img/tile-bg.png');
   font-family: var(--primary-font) !important;
   letter-spacing: 2px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 h1,
@@ -646,8 +650,6 @@ footer i {
 }
 
 /* home */
-
-
 .canvas-container {
   position: relative;
   width: 100%;
@@ -804,6 +806,9 @@ footer i {
 }
 
 /* movies */
+.movie-container .card {
+  border: 2px solid var(--feature-color-3);
+}
 
 /* gifts */
 #gift-section h1,

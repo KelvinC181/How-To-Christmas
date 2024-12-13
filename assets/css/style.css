@@ -779,6 +779,22 @@ footer i {
 
 /* Media Queries */
 
+/* small screens */
+@media screen and (max-width: 425px) {
+  #recipe-body .card {
+    margin: 0 5px 10px;
+  }
+}
+
+/* medium screens */
+@media screen and (min-width: 768px) {
+  /* Gifts */
+  #gift-section .card-body {
+    min-height: 651.33px;
+  }
+}
+
+/* large screens */
 @media screen and (min-width: 1024px) {
   #recipe-body .flex-container {
     display: flex;
@@ -797,9 +813,18 @@ footer i {
   }
 }
 
-@media screen and (max-width: 425px) {
-  #recipe-body .card {
-    margin: 0 5px 10px;
+/* xxl screens */
+@media screen and (min-width: 1920px) {
+  /* Gifts */
+  #gift-section .card-body {
+    min-height: 837.3px;
+  }
+
+  #gift-section .card-title {
+    font-size: 1.75rem;
+  }
+  #gift-section p {
+    font-size: 1.25rem;
   }
 }
 
@@ -820,7 +845,6 @@ h5 {
 
 #gift-section .accordion-button {
   color: white;
-  border-radius: 10px;
   font-weight: bold;
   text-transform: uppercase;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -845,7 +869,7 @@ h5 {
 #gift-section .accordion-body {
   background: var(--background-color);
   padding: 15px;
-  border-top: 2px solid var(--feature-color-3);
+  border-top: 2px;
   color: var(--font-color);
 }
 
@@ -859,7 +883,6 @@ h5 {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-
 }
 
 #gift-section .card:hover {
@@ -877,6 +900,10 @@ h5 {
 
 .child .accordion-button {
   background: linear-gradient(90deg, yellow, var(--secondary-color))
+}
+
+#gift-section .img-fluid {
+  margin-bottom: 1em;
 }
 
 /* jokes */

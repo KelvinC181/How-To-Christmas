@@ -848,6 +848,8 @@ h4,
 h5 {
   font-family: var(--primary-font);
   color: var(--feature-color-3);
+  z-index: 1000;
+  position: relative;
 }
 
 #gift-section p {
@@ -924,7 +926,7 @@ h5 {
   position: absolute;
   top: 0px;
   right: 0px;
-  z-index: 1;
+  z-index: 999;
 }
 
 /* jokes */

@@ -847,10 +847,12 @@ h3,
 h4,
 h5 {
   font-family: var(--primary-font);
+  color: var(--feature-color-3);
 }
 
 #gift-section p {
   font-family: var(--secondary-font);
+  color: var(--feature-color-3);
 }
 
 #gift-section .accordion-button {
@@ -889,10 +891,11 @@ h5 {
 }
 
 #gift-section .card {
-  border: none;
+  border: solid 4px var(--primary-color);
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: var(--very-light-cream);
 }
 
 #gift-section .card:hover {
@@ -914,6 +917,14 @@ h5 {
 
 #gift-section .img-fluid {
   margin-bottom: 1em;
+}
+
+.ribbon {
+  width: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
 }
 
 /* jokes */

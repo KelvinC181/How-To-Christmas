@@ -22,22 +22,12 @@
 
 /* general styles */
 /* navbar */
-.lobster-regular {
-  font-family: "Lobster", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.roboto-medium {
-  font-family: "Roboto", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
 .body-class{
   background-color: var(--background-color);
 }
 .navbar {
     background-color: var(--primary-color) !important;
+    font-family: var(--title-font);
 }
 .navbar-brand, .nav-link {
     color: var(--background-color) !important;
@@ -79,4 +69,12 @@
 /* movies */
 
 /* gifts */
+#gift-section h1, h2, h3, h4, h5{
+  font-family: var(--primary-font);
+}
+
+#gift-section p{
+  font-family: var(--secondary-font);
+}
+
     

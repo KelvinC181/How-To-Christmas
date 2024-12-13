@@ -55,3 +55,5 @@ homepage hero css gradient: https://gradient.page/ui-gradients/christmas
 ## Credit
 
 - The recipe page's ingredients and instructions text and accompanying images were generated with ChatGPT.
+
+- The HTML, CSS, and JavaScript for the recipe page's 'scroll to top' button were sourced from [a W3Schools page](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp).

@@ -31,7 +31,9 @@ body {
   letter-spacing: 2px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--feature-color-3) !important;
   font-family: var(--title-font);
 }

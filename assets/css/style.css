@@ -792,7 +792,7 @@ footer i {
 @media screen and (min-width: 768px) {
   /* Gifts */
   #gift-section .card-body {
-    min-height: 651.33px;
+    min-height: 368px;
   }
 }
 
@@ -819,7 +819,7 @@ footer i {
 @media screen and (min-width: 1920px) {
   /* Gifts */
   #gift-section .card-body {
-    min-height: 837.3px;
+    min-height: 272px;
   }
 
   #gift-section .card-title {

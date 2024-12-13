@@ -40,7 +40,7 @@ async function displayChristmasMovies() {
       if (data.results && data.results.length > 0) {
           data.results.forEach(movie => {
             
-          const movieImage = movie.poster_path !== null ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`:'/assets/img/movie-placeholder.webp';
+          const movieImage = movie.poster_path !== null ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`:'assets/img/movie-placeholder.webp';
               const movieCard = document.createElement('div');
               movieCard.classList.add('movie-card');
               movieCard.classList.add('w-50');

@@ -101,6 +101,11 @@ h3 {
   transform: scaleX(1);
 }
 
+.logo {
+  height: auto;
+  width: 60px;
+}
+
 /* footer */
 footer {
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkMzU0NDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGExMTBjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -724,7 +729,7 @@ h5 {
 
 #gift-section .accordion-button {
   color: white;
-  border-radius: 10px; 
+  border-radius: 10px;
   font-weight: bold;
   text-transform: uppercase;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -732,51 +737,54 @@ h5 {
 
 #gift-section .accordion-button:hover {
   background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-  
+
 }
+
 #gift-section .accordion-button:focus {
-  box-shadow: 0px 0px 0px ; 
+  box-shadow: 0px 0px 0px;
 }
 
 #gift-section .accordion-item {
-  border: none; 
-  margin-bottom: 10px; 
-  border-radius: 5px; 
-  overflow: hidden; 
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
+
 #gift-section .accordion-body {
   background: var(--background-color);
-  padding: 15px; 
+  padding: 15px;
   border-top: 2px solid var(--feature-color-3);
   color: var(--font-color);
 }
+
 #gift-section .accordion-collapse {
   transition: max-height 0.4s ease, opacity 0.4s ease;
   overflow: hidden;
 }
 
 #gift-section .card {
-  border: none; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  
+
 }
 
 #gift-section .card:hover {
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.male .accordion-button{
+.male .accordion-button {
   background: linear-gradient(90deg, blue, var(--secondary-color))
 }
 
-.female .accordion-button{
+.female .accordion-button {
   background: linear-gradient(90deg, pink, var(--secondary-color))
 }
 
-.child .accordion-button{
+.child .accordion-button {
   background: linear-gradient(90deg, yellow, var(--secondary-color))
 }
 

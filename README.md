@@ -50,6 +50,8 @@ Snowflakes: https://codepen.io/siddharth-nalwaya/pen/wvXZqbq
 
 Christmas jokes: https://github.com/marcyvillegas/random-joke-generator/tree/main, https://sv443.net/jokeapi/v2/#categories
 
+homepage hero css gradient: https://gradient.page/ui-gradients/christmas
+
 ## Credit
 
 - The recipe page's ingredients and instructions text and accompanying images were generated with ChatGPT.

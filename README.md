@@ -50,7 +50,9 @@ Snowflakes: https://codepen.io/siddharth-nalwaya/pen/wvXZqbq
 
 Christmas jokes: https://github.com/marcyvillegas/random-joke-generator/tree/main, https://sv443.net/jokeapi/v2/#categories
 
-homepage hero css gradient: https://gradient.page/ui-gradients/christmas
+Homepage hero css gradient: https://gradient.page/ui-gradients/christmas
+
+Pattern - https://patternico.com/
 
 ## Credit
 

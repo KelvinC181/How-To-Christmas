@@ -38,7 +38,7 @@ Our hackathon team had a Slack huddle to discuss the project. We agreed on an id
 
 ## Attribution
 
-Lil-GUI: https://www.jsdelivr.com/package/npm/lil-gui
+Bootstrap: https://getbootstrap.com/
 
 ThreeJS: https://threejs.org/
 

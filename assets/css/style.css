@@ -713,10 +713,31 @@ footer i {
 #recipe-body a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 #recipe-body a:hover {
   color: blue;
+}
+
+#recipe-body #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px; /* Place button at bottom of page */
+  right: 30px; /* Place button 30px from right */
+  z-index: 99; /* Ensure cannot overlap */
+  border: none;
+  outline: none;
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#recipe-body #myBtn:hover {
+  background-color: #555;
 }
 
 ::marker {

@@ -3,7 +3,7 @@
 * unavoidable without overly complicating the code and adding unnecessary complexity
 **/
 const globalVars = {
-  currentPage: window.location.pathname.substring(window.location.pathname.lastIndexOf('/')+1),
+  currentPage: window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1),
   search: {
     term: '',
     type: '',
@@ -30,20 +30,20 @@ async function displayChristmasMovies() {
 
   try {
     const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${globalVars.api.apiKey}&query=christmas`);
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
+
     const data = await response.json();
 
     if (data.results && data.results.length > 0) {
       data.results.forEach(movie => {
         const movieImage = movie.poster_path !== null ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'assets/img/movie-placeholder.webp';
-        
+
         const movieCard = document.createElement('div');
         movieCard.classList.add('col');
-        
+
         movieCard.innerHTML = `
           <div class="movie-card card rounded shadow-lg">
             <img src="${movieImage}" class="card-img-top" alt="${movie.title}">
@@ -71,30 +71,30 @@ async function displayChristmasMovies() {
 async function retrieveMovieDetails() {
   const movieId = new URLSearchParams(window.location.search).get('id');
   if (!movieId) {
-      console.error('Movie ID not found');
-      return;
+    console.error('Movie ID not found');
+    return;
   }
 
   try {
-      const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${globalVars.api.apiKey}`);
-      
-      if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      
-      const data = await response.json();
-      const movieDetails = document.querySelector('.movie-details');
-      
-      if (movieDetails) {
-        const movieImage = data.backdrop_path !== null ? `https://image.tmdb.org/t/p/w500${data.backdrop_path}`:'../assets/img/movie-placeholder.webp';
-        // set background image for the body
-        document.body.style.backgroundImage = `url('${movieImage}')`;
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundPosition = 'center';
-        document.body.style.backgroundAttachment = 'fixed';
-          movieDetails.innerHTML = `
+    const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${globalVars.api.apiKey}`);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const movieDetails = document.querySelector('.movie-details');
+
+    if (movieDetails) {
+      const movieImage = data.backdrop_path !== null ? `https://image.tmdb.org/t/p/w500${data.backdrop_path}` : '../assets/img/movie-placeholder.webp';
+      // set background image for the body
+      document.body.style.backgroundImage = `url('${movieImage}')`;
+      document.body.style.backgroundSize = 'cover';
+      document.body.style.backgroundPosition = 'center';
+      document.body.style.backgroundAttachment = 'fixed';
+      movieDetails.innerHTML = `
               <h1 class="text-white">${data.title}</h1>
-              <img src="${movieImage}"
+              <img class="mb-3 img-fluid movie-img" src="${movieImage}"
                 alt="${data.title}"
               />
               <p class="text-white">${data.overview}</p>
@@ -103,10 +103,10 @@ async function retrieveMovieDetails() {
               <p class="text-white">Runtime: ${data.runtime} minutes</p>
               <p class="text-white">Revenue: $${addCommasToNumber(data.revenue)}</p>
           `;
-      }
+    }
   }
   catch (error) {
-      console.error('Error fetching movie details:', error);
+    console.error('Error fetching movie details:', error);
   }
 }
 
@@ -134,7 +134,7 @@ function init() {
  * @returns {String} - The number with commas 
  **/
 function addCommasToNumber(number) {
-  if(!isNaN(number)) {
+  if (!isNaN(number)) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   } else {
     return "NaN";

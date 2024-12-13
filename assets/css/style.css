@@ -810,6 +810,11 @@ footer i {
   border: 2px solid var(--feature-color-3);
 }
 
+.movie-img {
+  border: 2px solid var(--feature-color-3);
+  border-radius: 5px;
+}
+
 /* gifts */
 #gift-section h1,
 h2,

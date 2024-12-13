@@ -792,7 +792,7 @@ footer i {
 @media screen and (min-width: 768px) {
   /* Gifts */
   #gift-section .card-body {
-    min-height: 651.33px;
+    min-height: 368px;
   }
 }
 
@@ -819,7 +819,7 @@ footer i {
 @media screen and (min-width: 1920px) {
   /* Gifts */
   #gift-section .card-body {
-    min-height: 837.3px;
+    min-height: 393px;
   }
 
   #gift-section .card-title {
@@ -847,10 +847,13 @@ h3,
 h4,
 h5 {
   font-family: var(--primary-font);
+  color: var(--feature-color-3);
+  position: relative;
 }
 
 #gift-section p {
   font-family: var(--secondary-font);
+  color: var(--feature-color-3);
 }
 
 #gift-section .accordion-button {
@@ -889,15 +892,24 @@ h5 {
 }
 
 #gift-section .card {
-  border: none;
+  border: solid 4px var(--secondary-color);
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: var(--very-light-cream);
 }
 
 #gift-section .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#gift-section .card-header {
+  background-color: var(--secondary-color);
+}
+
+#gift-section .card-title {
+  font-weight: bold;
 }
 
 .male .accordion-button {
@@ -914,6 +926,14 @@ h5 {
 
 #gift-section .img-fluid {
   margin-bottom: 1em;
+}
+
+.ribbon {
+  width: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1000;
 }
 
 /* jokes */

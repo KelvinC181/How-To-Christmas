@@ -7,7 +7,7 @@
 
   <title>How To Christmas</title>
   <!-- stylesheet -->
-  <link rel="stylesheet" href="assets/CSS/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
@@ -19,7 +19,7 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
     <div class="container-fluid">
       <a class="fs-3 navbar-brand" href="index.html">How to Christmas</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -57,7 +57,12 @@
       </div>
     </div>
   </nav>
-  <canvas class="webgl"></canvas>
+  <div class="canvas-container">
+    <div class="canvas-overlay">
+      <h2>Christmas is coming...</h2>
+    </div>
+    <canvas class="webgl"></canvas>
+  </div>
   <div class="snowflakes">
     <div class="initial-snow">
       <div class="snow">&#10052;</div>
@@ -128,7 +133,7 @@
         <li class="list-inline-item pb-2">
           <a href="https://github.com/JaimieHemmings" class="team text-decoration-none" target="_blank">
             <i class="fs-5 fab fa-github"></i>
-            Jaimie Warburton
+            Jaimie Hemmings
           </a>
         </li>
         <li class="list-inline-item pb-2">
@@ -155,6 +160,12 @@
             Viola Bergere
           </a>
         </li>
+        <li class="list-inline-item pb-2">
+          <a href="https://github.com/Noah-Samawi" class="team text-decoration-none" target="_blank">
+            <i class="fs-5 fab fa-github"></i>
+            Noah Samawi
+          </a>
+        </li>
       </ul>
     </div>
   </footer>
@@ -165,7 +176,7 @@
     crossorigin="anonymous"></script>
 
   <!-- custom script -->
-  <script src="assets/JS/script.js"></script>
+  <script src="assets/js/script.js"></script>
   <!-- Three JS Script -->
   <script type="importmap">
       {
@@ -176,7 +187,7 @@
         }
       }
     </script>
-  <script type="module" src="assets/JS/countdown.js"></script>
+  <script type="module" src="assets/js/countdown.js"></script>
 </body>
 
 </html>

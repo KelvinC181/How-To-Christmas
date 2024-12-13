@@ -727,6 +727,22 @@ footer i {
 
 /* Media Queries */
 
+/* small screens */
+@media screen and (max-width: 425px) {
+  #recipe-body .card {
+    margin: 0 5px 10px;
+  }
+}
+
+/* medium screens */
+@media screen and (min-width: 768px) {
+  /* Gifts */
+  #gift-section .card-body {
+    min-height: 651.33px;
+  }
+}
+
+/* large screens */
 @media screen and (min-width: 1024px) {
   #recipe-body .flex-container {
     display: flex;
@@ -745,9 +761,18 @@ footer i {
   }
 }
 
-@media screen and (max-width: 425px) {
-  #recipe-body .card {
-    margin: 0 5px 10px;
+/* xxl screens */
+@media screen and (min-width: 1920px) {
+  /* Gifts */
+  #gift-section .card-body {
+    min-height: 833px;
+  }
+
+  #gift-section .card-title {
+    font-size: 1.75rem;
+  }
+  #gift-section p {
+    font-size: 1.25rem;
   }
 }
 
@@ -819,6 +844,10 @@ footer i {
 
 .child .accordion-button {
   background: linear-gradient(90deg, yellow, var(--secondary-color))
+}
+
+#gift-section .img-fluid {
+  margin-bottom: 1em;
 }
 
 /* jokes */

@@ -650,9 +650,15 @@ footer i {
 
 /* Recipe Links */
 
-.flex-links {
+#recipe-body .flex-links{ 
   display: flex;
   flex-direction: column;  
+}
+
+#recipe-body #christmas-bg{
+  background-image: url("../img/recipe_images/recipe-link-background-image.png");
+  background-size: cover;
+  background-position: center;
 }
 
 #recipe-body a {

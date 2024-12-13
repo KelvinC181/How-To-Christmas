@@ -26,7 +26,8 @@
 /* general styles */
 
 body {
-  background-color: var(--very-light-cream) !important;
+  background: rgb(245,235,224);
+  background-image: url('../img/tile-bg.png');
   font-family: var(--primary-font) !important;
   letter-spacing: 2px;
 }
@@ -747,11 +748,15 @@ footer i {
 }
 
 #recipe-body #myBtn {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   position: fixed;
-  bottom: 20px; /* Place button at bottom of page */
-  right: 30px; /* Place button 30px from right */
-  z-index: 99; /* Ensure cannot overlap */
+  bottom: 20px;
+  /* Place button at bottom of page */
+  right: 30px;
+  /* Place button 30px from right */
+  z-index: 99;
+  /* Ensure cannot overlap */
   border: none;
   outline: none;
   background-color: darkred;

@@ -26,7 +26,8 @@
 /* general styles */
 
 body {
-  background-color: var(--very-light-cream) !important;
+  background: rgb(245,235,224);
+  background-image: url('../img/tile-bg.png');
   font-family: var(--primary-font) !important;
   letter-spacing: 2px;
 }
@@ -39,12 +40,26 @@ h3 {
 }
 
 /* navbar */
-.body-class{
+.body-class {
   background-color: var(--background-color);
 }
+
 .navbar {
-    background-color: var(--primary-color) !important;
-    font-family: var(--title-font);
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkMzU0NDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGExMTBjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d35448), color-stop(100%, #4a110c));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #d35448 0%, #4a110c 100%);
+  /* W3C */
+  background-color: var(--primary-color) !important;
+  font-family: var(--title-font);
 }
 
 .navbar-brand,
@@ -89,15 +104,28 @@ h3 {
 
 .logo {
   height: auto;
-  width: 60px;
+  width: 80px;
 }
 
 /* footer */
 footer {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkMzU0NDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGExMTBjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d35448), color-stop(100%, #4a110c));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #d35448 0%, #4a110c 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #d35448 0%, #4a110c 100%);
+  /* W3C */
   background-color: var(--primary-color);
 }
 
-.team {
+.team-member {
   color: var(--background-color);
   font-family: var(--title-font);
 }
@@ -638,12 +666,10 @@ footer i {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #2F7336;
-  background: linear-gradient(
-    to right,
-    #2F7336,#AA3A38
-  );
+  background: linear-gradient(to right,
+      #2F7336, #AA3A38);
   z-index: 2;
   opacity: 1;
   transition: opacity 1s ease;
@@ -657,7 +683,8 @@ footer i {
 
 .canvas-overlay.hidden {
   opacity: 0;
-} 
+}
+
 /* recipe */
 
 #recipe-body {
@@ -698,12 +725,12 @@ footer i {
   max-width: 500px;
 }
 
-#recipe-body .flex-links{ 
+#recipe-body .flex-links {
   display: flex;
   flex-direction: column;
 }
 
-#recipe-body #christmas-bg{
+#recipe-body #christmas-bg {
   background-image: url("../img/recipe_images/recipe-link-background-image.png");
   background-size: contain;
   background-position: center;
@@ -713,10 +740,35 @@ footer i {
 #recipe-body a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 #recipe-body a:hover {
   color: blue;
+}
+
+#recipe-body #myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  /* Place button at bottom of page */
+  right: 30px;
+  /* Place button 30px from right */
+  z-index: 99;
+  /* Ensure cannot overlap */
+  border: none;
+  outline: none;
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#recipe-body #myBtn:hover {
+  background-color: #555;
 }
 
 ::marker {
@@ -779,11 +831,15 @@ footer i {
 /* movies */
 
 /* gifts */
-#gift-section h1, h2, h3, h4, h5{
+#gift-section h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: var(--primary-font);
 }
 
-#gift-section p{
+#gift-section p {
   font-family: var(--secondary-font);
 }
 

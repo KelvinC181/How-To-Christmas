@@ -38,19 +38,19 @@ Our hackathon team had a Slack huddle to discuss the project. We agreed on an id
 
 ## Attribution
 
-Lil-GUI: https://www.jsdelivr.com/package/npm/lil-gui
+Bootstrap: https://getbootstrap.com/
 
 ThreeJS: https://threejs.org/
 
-Skybox: https://opengameart.org/content/winter-skyboxes
-
-Hut: https://sketchfab.com/3d-models/cosy-hut-28d0ad2f6e8f44d2ba1b2c05280548c5
+Tavern In Snow: https://sketchfab.com/3d-models/tavern-in-snow-f999dd375bce43a0bd1bcfe218a550a7
 
 Christmas button: https://codepen.io/TackOnes1/pen/MaLQjr
 
 Snowflakes: https://codepen.io/siddharth-nalwaya/pen/wvXZqbq
 
 Christmas jokes: https://github.com/marcyvillegas/random-joke-generator/tree/main, https://sv443.net/jokeapi/v2/#categories
+
+homepage hero css gradient: https://gradient.page/ui-gradients/christmas
 
 ## Credit
 

@@ -887,8 +887,8 @@ footer i {
   display: none;
   /* Hidden by default */
   position: fixed;
-  bottom: 20px;
-  /* Place button at bottom of page */
+  top: 20px;
+  /* Place button at top of page */
   right: 30px;
   /* Place button 30px from right */
   z-index: 99;

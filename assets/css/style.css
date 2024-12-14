@@ -728,35 +728,62 @@ footer i {
 #recipe-body li {
   margin: 5px;
 }
+#recipe-body .intro-p{
+  font-family: 'Mountains of Christmas', cursive;
+}
 
 /* Recipe Links */
 
-#recipe-body #links-container {
+#links-container {
   max-width: 500px;
+  margin: 20px auto;
+  background-color: #fffaf2;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
+#christmas-bg {
+  padding: 20px;
+=======
 #recipe-body .flex-links {
   display: flex;
   flex-direction: column;
 }
 
 #recipe-body #christmas-bg {
+>>>>>>> main
   background-image: url("../img/recipe_images/recipe-link-background-image.png");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
+<<<<<<< HEAD
+.flex-columns {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds space between the two columns */
+=======
 #recipe-body a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+>>>>>>> main
 }
 
-#recipe-body a:hover {
-  color: blue;
+.flex-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+<<<<<<< HEAD
+.flex-links li {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 1.2rem;
+=======
 #recipe-body #myBtn {
   display: none;
   /* Hidden by default */
@@ -784,11 +811,40 @@ footer i {
 ::marker {
   font-family: 'Mountains of Christmas';
   font-size: 1.3rem;
+>>>>>>> main
   color: var(--feature-color-3);
+  text-align: left;
 }
+
+.flex-links li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.flex-links li a:hover {
+  color: #fff;
+  background-color: var(--feature-color-3);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.centered-columns {
+  justify-content: space-around; /* Keeps the two columns closer to the center */
+}
+
 
 /* Media Queries */
 
+<<<<<<< HEAD
+@media (max-width: 768px) {
+  #links-container {
+    padding: 10px;
+=======
 /* small screens */
 @media screen and (max-width: 425px) {
   #recipe-body .card {
@@ -808,18 +864,17 @@ footer i {
 @media screen and (min-width: 1024px) {
   #recipe-body .flex-container {
     display: flex;
+>>>>>>> 3d025829d1d8471d263829724e11cc1e6139ea85
   }
 
-  #recipe-body .ingredients {
-    margin-left: 20px;
+  .flex-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Reduce gap for smaller screens */‚
   }
 
-  .ingredients-list {
-    list-style-type: circle;
-  }
-
-  #recipe-body img {
-    max-width: 400px;
+  .flex-links {
+    text-align: center;
   }
 }
 

@@ -217,6 +217,10 @@ class ChristmasScene {
         const overlay = document.querySelector('.canvas-overlay');
         if (overlay) {
             overlay.classList.add('hidden');
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 1000);
+
         }
     }
 

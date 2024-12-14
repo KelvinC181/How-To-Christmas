@@ -653,6 +653,7 @@ footer i {
 .canvas-container {
   position: relative;
   width: 100%;
+  z-index: 1;
 
   canvas {
     position: relative;
@@ -675,6 +676,7 @@ footer i {
   z-index: 2;
   opacity: 1;
   transition: opacity 1s ease;
+  pointer-events: none;
 
   h2 {
     font-size: 5rem;
@@ -685,6 +687,12 @@ footer i {
 
 .canvas-overlay.hidden {
   opacity: 0;
+}
+
+.audio-player {
+  position: relative;
+  z-index: 10; 
+  pointer-events:auto;
 }
 
 /* recipe */

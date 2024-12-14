@@ -1132,6 +1132,18 @@ h5 {
   background-color: transparent !important;
   width: 100%;
 }
+
+.toast-header{
+  background-color: var(--secondary-color) !important;
+  color: var(--feature-color-3);
+}
+
+.toast-body {
+  background-color: var(--very-light-cream);
+  color: var(--feature-color-3);
+  border-radius: 10px;
+}
+
             
 
 /* jokes */

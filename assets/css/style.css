@@ -142,7 +142,7 @@ h3 {
 
 .logo {
   height: auto;
-  width: 80px;
+  width: 70px;
 }
 
 /* footer */
@@ -933,6 +933,12 @@ footer i {
 /* Media Queries */
 
 /* small screens */
+@media screen and (max-width: 339px) {
+  .logo {
+    width: 60px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   #recipe-body .card {
     margin: 0 5px 10px;
@@ -945,6 +951,15 @@ footer i {
   /* Gifts */
   #gift-section .card-body {
     min-height: 368px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 0px !important;
+  }
+  .logo {
+    width: 55px;
   }
 }
 

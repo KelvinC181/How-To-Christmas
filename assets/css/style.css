@@ -1025,6 +1025,11 @@ h5 {
   color: var(--feature-color-3);
 }
 
+#gift-section i {
+  margin-left: 10px;
+  font-size: x-large;
+}
+
 #gift-section .accordion-button {
   color: white;
   font-weight: bold;
@@ -1099,31 +1104,86 @@ h5 {
 
 #gift-section .img-fluid {
   margin-bottom: 1em;
+  border-radius: 10px;
 }
 
 .ribbon {
   width: 50%;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -5px;
+  right: -5px;
   z-index: 1000;
 }
 
 #openModal {
   cursor: pointer;
 }
+
 #itemAddedToast {
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 1050;
 }
+
 #shoppingListModal  {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.modal-title {
+  text-align: center;
+}
+
+#shoppingListModal .btn-close {
+  position:absolute;
+  right: 50px;
+  top: 50px;
+}
+
+.modal-content {
+  height: 90vh;
+  border: none !important;
+  background-color: transparent !important;
+  background-image: url("../img/gift_images/scroll.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  min-width: 80%;
+}
+
+.gift-modal-list {
+  height: 80%; 
+  overflow-y: auto;
+}
+
+.modal-content li {
+  text-align: center;
+  font-family: var(--title-font);
+  margin-top: 10px;
+  border: none !important;
+  background-color: transparent !important;
+  width: 100%;
+}
+
+.toast-header{
+  background-color: var(--secondary-color) !important;
+  color: var(--feature-color-3);
+}
+
+.toast-body {
+  background-color: var(--very-light-cream);
+  color: var(--feature-color-3);
+  border-radius: 10px;
+}            
 
 /* about */
 .accordion {

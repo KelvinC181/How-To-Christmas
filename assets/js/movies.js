@@ -96,6 +96,7 @@ async function retrieveMovieDetails() {
 
     if (movieDetails) {
       const movieImage = data.backdrop_path !== null ? `https://image.tmdb.org/t/p/w500${data.backdrop_path}` : '../assets/img/movie-placeholder.webp';
+      const moviePoster  = data.poster_path !== null ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : '../assets/img/movie-placeholder.webp';
       // set background image for the body
       document.body.style.backgroundImage = `url('${movieImage}')`;
       document.body.style.backgroundSize = 'cover';
@@ -103,14 +104,25 @@ async function retrieveMovieDetails() {
       document.body.style.backgroundAttachment = 'fixed';
       movieDetails.innerHTML = `
               <h1 class="text-white">${data.title}</h1>
-              <img class="mb-3 img-fluid movie-img" src="${movieImage}"
+              <img class="mb-3 img-fluid movie-img" src="${moviePoster}"
                 alt="${data.title}"
               />
               <p class="text-white">${data.overview}</p>
-              <p class="text-white">Rating: ${data.vote_average}</p>
-              <p class="text-white">Release Date: ${data.release_date}</p>
-              <p class="text-white">Runtime: ${data.runtime} minutes</p>
-              <p class="text-white">Revenue: $${addCommasToNumber(data.revenue)}</p>
+              ${data.genres ? `<p class="text-white">Genres: ${data.genres.map(genre => genre.name).join(', ')}</p>` : ''}
+              ${data.vote_average !== 0 ? `<p class="text-white">Rating: ${data.vote_average}</p>` : ''}
+              ${data.release_date ? `<p class="text-white">Release Date: ${data.release_date}</p>` : ''}
+              ${data.runtime ? `<p class="text-white">Runtime: ${data.runtime} minutes</p>` : ''}
+              <p class="text-white">
+                Revenue: ${data.revenue ? `$${addCommasToNumber(data.revenue)}` : 'No data available'}
+              </p>
+              <p class="text-white">
+                Budget: ${data.budget ? `$${addCommasToNumber(data.budget)}` : 'No data available'}
+              </p>
+              <p class="text-white">Tagline: ${data.tagline}</p>
+              <p class="text-white">Status: ${data.status}</p>
+              <p class="text-white">
+                ${data.homepage ? `Homepage: <a href="${data.homepage}" target="_blank">${data.homepage}</a></p>` : ''}
+              <p class="mt-5"><a href="../movies/movies.html" class="primary-btn p-2 text-decoration-none">Back to Movies</a></p>
           `;
     }
   }

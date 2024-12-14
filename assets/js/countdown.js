@@ -282,22 +282,6 @@ class ChristmasScene {
         }
     }
 
-    onMouseClick(event) {
-        this.raycaster.setFromCamera(this.mouse, this.camera)
-        
-        if (this.model) {
-            const intersects = this.raycaster.intersectObject(this.model, true)
-            if (intersects.length > 0) {
-                const randomRotation = Math.PI * 2 * Math.random()
-                gsap.to(this.model.rotation, {
-                    y: randomRotation,
-                    duration: 1,
-                    ease: "power2.inOut"
-                })
-            }
-        }
-    }
-
     startAnimation() {
         // Make text a child of camera and set its position
         if (this.textMesh) {

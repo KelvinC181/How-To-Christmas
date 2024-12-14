@@ -1186,22 +1186,26 @@ h5 {
 }
 
 /* about */
-.accordion {
+#faqAccordion {
   border: 2px solid var(--feature-color-3);
 }
 
-.accordion-button {
+#faqAccordion .accordion-button {
   background-color: var(--very-light-cream) !important;
   color: var(--feature-color-2);
 }
 
-.accordion-button:focus {
+#faqAccordion .accordion-button:focus {
   box-shadow: none !important;
   color: var(--feature-color-3);
 }
 
-.accordion-button:not(.collapsed) {
+#faqAccordion .accordion-button:not(.collapsed) {
   color: var(--feature-color-3) !important;
+}
+
+.about-span {
+  font-family: var(--title-font);
 }
 
 /* jokes */

@@ -73,9 +73,9 @@ async function displayChristmasMovies(page = 1) {
 
       const totalPages = Math.ceil(data.total_results / resultsPerPage);
       paginationContainer.innerHTML = `
-        <button class="primary-btn" ${page === 1 ? 'disabled' : ''} onclick="displayChristmasMovies(${page - 1})">Previous</button>
-        <span class="text-white mx-3">Page ${page} of ${totalPages}</span>
-        <button class="primary-btn" ${page === totalPages ? 'disabled' : ''} onclick="displayChristmasMovies(${page + 1})">Next</button>
+        <button class="primary-btn px-3 py-2" ${page === 1 ? 'disabled' : ''} onclick="displayChristmasMovies(${page - 1})">Previous</button>
+        <span class="mx-3">Page ${page} of ${totalPages}</span>
+        <button class="primary-btn px-3 py-2" ${page === totalPages ? 'disabled' : ''} onclick="displayChristmasMovies(${page + 1})">Next</button>
       `;
         setTimeout(() => {
           const spinner = document.querySelector('.spinner');

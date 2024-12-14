@@ -749,7 +749,7 @@ footer i {
   background-repeat: no-repeat;
 }
 
-#recipe-body a {
+#recipe-body .bold-links a {
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -787,6 +787,18 @@ footer i {
   font-family: 'Mountains of Christmas';
   font-size: 1.3rem;
   color: var(--feature-color-3);
+}
+
+/* Recipe Audios */
+
+.recipe-audio-div {
+  text-align: center;
+}
+
+.recipe-audio {
+  background-color: darkred;
+  padding: 5px;
+  border-radius: 25px;
 }
 
 /* Media Queries */

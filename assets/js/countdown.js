@@ -56,22 +56,12 @@ class ChristmasScene {
       this.scene.add(ambientLight)
 
       // Main directional light
-      const directionalLight = new THREE.DirectionalLight(0xffffff, 0.2)
-      directionalLight.position.set(5, 10, 5)
+      const directionalLight = new THREE.DirectionalLight(0xdaaeff, 1)
+      directionalLight.position.set(0, 3, 5)
       directionalLight.castShadow = true
       directionalLight.shadow.mapSize.width = 2048
       directionalLight.shadow.mapSize.height = 2048
       this.scene.add(directionalLight)
-
-      // Warm point light for tavern glow
-      const pointLight1 = new THREE.PointLight(0xffa95c, 1, 20)
-      pointLight1.position.set(-2, 3, -8)
-      this.scene.add(pointLight1)
-
-      // Cool fill light
-      const pointLight2 = new THREE.PointLight(0x4b6cff, 0.5, 20)
-      pointLight2.position.set(2, 3, -12)
-      this.scene.add(pointLight2)
   }
 
     setupFog() {

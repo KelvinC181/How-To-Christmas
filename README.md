@@ -54,6 +54,8 @@ Homepage hero css gradient: https://gradient.page/ui-gradients/christmas
 
 Pattern - https://patternico.com/
 
+AI music generator - https://aisonggenerator.io/
+
 ## Credit
 
 - The recipe page's ingredients and instructions text and accompanying images were generated with ChatGPT.

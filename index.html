@@ -23,7 +23,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark shadow-lg py-3">
     <div class="container-fluid px-0">
       <img class="logo" src="assets/img/grinch-logo.png" alt="">
-      <a class="fs-3 navbar-brand" href="index.html">How to Christmas</a>
+      <a class="fs-2 fw-bold navbar-brand" href="index.html">How to Christmas</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -66,6 +66,17 @@
     <canvas class="webgl"></canvas>
   </div>
   <div class="snowflakes">
+    <div class="pt-5">
+      <div class="audio-player text-center mt-5 pt-5">
+        <audio id="backgroundMusic" autoplay loop>
+          <source src="assets/music/we-wish-you-a-merry-christmas-128367.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button id="muteButton" class="muteBtn primary-btn mt-5 px-3 py-2">
+          Mute Music
+        </button>
+      </div>
+    </div>
     <div class="initial-snow">
       <div class="snow">&#10052;</div>
       <div class="snow">&#10052;</div>

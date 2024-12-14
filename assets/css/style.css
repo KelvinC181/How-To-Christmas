@@ -906,7 +906,7 @@ footer i {
 }
 
 #recipe-body .card {
-  border: 2px solid var(--feature-color-1);
+  border: 2px solid var(--feature-color-3);
   margin: 0 auto 10px;
   max-width: 1000px;
 }
@@ -1184,7 +1184,7 @@ h5 {
   z-index: 1050;
 }
 
-#shoppingListModal  {
+#shoppingListModal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1196,7 +1196,7 @@ h5 {
 }
 
 #shoppingListModal .btn-close {
-  position:absolute;
+  position: absolute;
   right: 50px;
   top: 50px;
 }
@@ -1219,7 +1219,7 @@ h5 {
 }
 
 .gift-modal-list {
-  height: 80%; 
+  height: 80%;
   overflow-y: auto;
 }
 
@@ -1232,7 +1232,7 @@ h5 {
   width: 100%;
 }
 
-.toast-header{
+.toast-header {
   background-color: var(--secondary-color) !important;
   color: var(--feature-color-3);
 }
@@ -1241,7 +1241,7 @@ h5 {
   background-color: var(--very-light-cream);
   color: var(--feature-color-3);
   border-radius: 10px;
-}            
+}
 
 /* about */
 #faqAccordion {
@@ -1249,7 +1249,8 @@ h5 {
 }
 
 #faqAccordion .accordion-button {
-  background-color: var(--very-light-cream) !important;
+  background: rgb(102, 114, 86);
+  background: radial-gradient(circle, rgba(102, 114, 86, 0.8407738095238095) 0%, rgba(245, 235, 224, 1) 100%);
   color: var(--feature-color-2);
 }
 
@@ -1349,7 +1350,7 @@ h5 {
 }
 
 .joke-card {
-  border: 2px solid var(--feature-color-1) !important;
+  border: 2px solid var(--feature-color-3) !important;
 }
 
 .card-title {
@@ -1357,33 +1358,13 @@ h5 {
 }
 
 /* Activities Page */
-.activities-header {
-  /* background-color: #7a231d; */
-  color: #fff;
-  text-align: center;
-  padding: 2rem;
-  margin-top: 100px;
-  /* Adjust for fixed navbar height */
-}
-
-.activities-header h1 {
-  font-weight: bold;
-}
-
-.activities-header p {
-  font-weight: bold;
-  color: #283618;
-}
-
 .category-nav {
-  /* background-color: #b43b2b; */
   display: flex;
-  justify-content: center;
   gap: 1rem;
   padding: 1rem;
 }
 
-.category-nav button {
+/*.category-nav button {
   background-color: #7a231d;
   border: none;
   border-radius: 5px;
@@ -1397,10 +1378,10 @@ h5 {
 .category-nav button:hover {
   background-color: #b43b2b;
   color: white;
-}
+}*/
 
-.activities {
-  padding: 1rem;
+.activity-card {
+  border: 2px solid var(--feature-color-3) !important;
 }
 
 .category {
@@ -1412,26 +1393,4 @@ h5 {
 .category.active {
   display: block;
   /* Show active category */
-}
-
-.activity {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fff;
-  margin: 1rem 0;
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.activity img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.activity iframe {
-  width: 100%;
-  height: 300px;
-  border: 0;
-  margin-top: 1rem;
 }

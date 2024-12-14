@@ -78,7 +78,12 @@
 
   <!-- main content -->
   <main id="gift-section">
-    <h1 class="text-center my-3">Thoughtful gifts for everyone</h1>
+    <div class="d-flex justify-content-center align-items-center my-3">
+    <h1 class="text-center me-2">Thoughtful gifts for everyone</h1>
+    <div>
+      <i class="fa-solid fa-basket-shopping" id="openModal"></i>
+  </div>
+  </div>
     <section id="gift-ideas" class="container-fluid px-0">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
@@ -466,6 +471,33 @@
         </div>
       </div>
     </section>
+    <div class="modal fade" id="shoppingListModal" tabindex="-1" aria-labelledby="shoppingListModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="shoppingListModalLabel">Gift List</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <ul id="shoppingList" class="list-group">
+                      
+                  </ul>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="toast" id="itemAddedToast" data-bs-autohide="true"data-bs-delay="1000">
+    <div class="toast-header">
+        <strong class="me-auto">Item Added</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+        The item has been added to your gift list!
+    </div>
+</div>
   </main>
 
   <!-- footer -->
@@ -547,7 +579,7 @@
     crossorigin="anonymous"></script>
 
   <!-- custom script -->
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/gifts.js"></script>
 </body>
 
 </html>

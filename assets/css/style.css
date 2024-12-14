@@ -653,6 +653,7 @@ footer i {
 .canvas-container {
   position: relative;
   width: 100%;
+  z-index: 1;
 
   canvas {
     position: relative;
@@ -675,6 +676,7 @@ footer i {
   z-index: 2;
   opacity: 1;
   transition: opacity 1s ease;
+  pointer-events: none;
 
   h2 {
     font-size: 5rem;
@@ -685,6 +687,12 @@ footer i {
 
 .canvas-overlay.hidden {
   opacity: 0;
+}
+
+.audio-player {
+  position: relative;
+  z-index: 10; 
+  pointer-events:auto;
 }
 
 /* recipe */
@@ -846,7 +854,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--primary-font);
+  font-family: var(--title-font);
   color: var(--feature-color-3);
   position: relative;
 }
@@ -913,15 +921,16 @@ h5 {
 }
 
 .male .accordion-button {
-  background: linear-gradient(90deg, blue, var(--secondary-color))
+  background: linear-gradient(90deg, #0461B8, var(--secondary-color))
 }
 
 .female .accordion-button {
-  background: linear-gradient(90deg, pink, var(--secondary-color))
+  background: linear-gradient(90deg, #CC1470, var(--secondary-color))
 }
 
 .child .accordion-button {
-  background: linear-gradient(90deg, yellow, var(--secondary-color))
+  background: linear-gradient(90deg, #D67206, var(--secondary-color));
+  color: var(--font-color);
 }
 
 #gift-section .img-fluid {

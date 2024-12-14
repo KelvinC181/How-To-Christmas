@@ -36,6 +36,11 @@ body {
   scrollbar-width: none;
 }
 
+.py-10 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 h1,
 h2,
 h3 {

@@ -26,7 +26,7 @@
 /* general styles */
 
 body {
-  background: rgb(245,235,224);
+  background: rgb(245, 235, 224);
   background-image: url('../img/tile-bg.png');
   font-family: var(--primary-font) !important;
   letter-spacing: 2px;
@@ -654,7 +654,7 @@ footer i {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow:hidden;
+  overflow: hidden;
   z-index: 1;
 
   canvas {
@@ -693,8 +693,8 @@ footer i {
 
 .audio-player {
   position: relative;
-  z-index: 10; 
-  pointer-events:auto;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 /* recipe */
@@ -800,6 +800,7 @@ footer i {
 
 /* medium screens */
 @media screen and (min-width: 768px) {
+
   /* Gifts */
   #gift-section .card-body {
     min-height: 368px;
@@ -827,6 +828,7 @@ footer i {
 
 /* xxl screens */
 @media screen and (min-width: 1920px) {
+
   /* Gifts */
   #gift-section .card-body {
     min-height: 393px;
@@ -835,6 +837,7 @@ footer i {
   #gift-section .card-title {
     font-size: 1.75rem;
   }
+
   #gift-section p {
     font-size: 1.25rem;
   }
@@ -945,6 +948,15 @@ h5 {
   top: 0px;
   right: 0px;
   z-index: 1000;
+}
+
+/* team */
+.team-card {
+  border: 2px solid var(--feature-color-3) !important;
+}
+
+.link {
+  color: var(--feature-color-1);
 }
 
 /* jokes */

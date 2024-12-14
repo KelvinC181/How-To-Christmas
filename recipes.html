@@ -19,19 +19,24 @@
 
 <body class="body-class d-flex flex-column min-vh-100" id="recipe-body">
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg py-3">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg py-3 sticky-top">
     <div class="container-fluid px-0">
       <img class="logo" src="assets/img/grinch-logo.png" alt="">
-      <a class="fs-2 fw-bold navbar-brand" href="index.html">How to Christmas</a>
+      <a class="fs-3 fw-bold navbar-brand" href="index.html">How to Christmas</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav fs-4 gap-3 mx-auto">
+        <ul class="navbar-nav fs-5 gap-3 ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">
               <i class="fas fa-house me-1"></i>Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              <i class="fas fa-circle-info me-1"></i>About
             </a>
           </li>
           <li class="nav-item">
@@ -43,6 +48,7 @@
             <a class="nav-link" href="movies.html">
               <i class="fas fa-film me-1"></i>Movies
             </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="jokes.html">
               <i class="fas fa-face-laugh me-1"></i>Jokes
@@ -51,6 +57,11 @@
           <li class="nav-item">
             <a class="nav-link" href="recipes.html">
               <i class="fas fa-utensils me-1"></i>Recipes
+            </a>
+          </li>
+          <li class="px-2 nav-item">
+            <a class="nav-link" href="activities.html">
+              <i class="fas fa-utensils me-1"></i>Activities
             </a>
           </li>
         </ul>
@@ -83,20 +94,61 @@
       <div class="card-body text-center" id="christmas-bg">
 
         <div class="flex-links">
-          <a href="#turkey">Roast Turkey</a>
-          <a href="#yorkshire">Yorkshire Pudding</a>
-          <a href="#pudding">Christmas Pudding</a>
-          <a href="#treacle">Treacle Sponge</a>
-          <a href="#crumble">Apple Crumble</a>
-          <a href="#wellington">Beef Wellington</a>
-          <a href="#meringue">Lemon Meringue Pie</a>
-          <a href="#lava">Chocolate Lava Cake</a>
+          <a
+            href="#turkey"
+            aria-label="Scroll to roast turkey recipe"
+          >Roast Turkey</a>
+          <a
+            href="#yorkshire"
+            aria-label="Scroll to Yorkshire pudding recipe"
+          >Yorkshire Pudding</a>
+          <a
+            href="#pudding"
+            aria-label="Scroll to Christmas pudding recipe"
+          >Christmas Pudding</a>
+          <a
+            href="#treacle"
+            aria-label="Scroll to treacle sponge recipe"
+          >Treacle Sponge</a>
+          <a
+            href="#crumble"
+            aria-label="Scroll to apple crumble recipe"
+          >Apple Crumble</a>
+          <a
+            href="#wellington"
+            aria-label="Scroll to beef wellington recipe"
+          >Beef Wellington</a>
+          <a
+            href="#meringue"
+            aria-label="Scroll to lemon meringue pie recipe"
+          >Lemon Meringue Pie</a>
+          <a
+            href="#lava"
+            aria-label="Scroll to chocolate lava cake recipe"
+          >Chocolate Lava Cake</a>
+          <a
+            href="#mince"
+            aria-label="Scroll to mince pies recipe"
+          >Mince Pies</a>
+          <a
+            href="#eggnog"
+            aria-label="Scroll to eggnog recipe"
+          >Eggnog</a>
+          <a
+            href="#mulled"
+            aria-label="Scroll to mulled wine recipe"
+          >Mulled Wine</a>
         </div>
 
       </div>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      aria-label="Scroll to top of page"
+      title="Go to top"
+    >Top</button>
 
     <!-- Roast Turkey recipe -->
 
@@ -520,79 +572,172 @@
       </div>
     </div>
 
+    <!-- Mince Pies recipe -->
+
+    <div class="card rounded shadow-lg">
+      <div class="card-body" id="mince">
+        <h2 class="fw-bold pb-2">Mince Pies</h2>
+
+        <div class="flex-container">
+          <!-- ChatGPT-generated image -->
+          <img class="rounded" src="assets/img/recipe_images/mince-pies.webp" alt="mince pies" />
+
+          <div class="ingredients">
+            <h3 class="fw-bolder">Ingredients</h3>
+
+            <ul class="ingredients-list">
+              <li>225g cold butter, diced</li>
+              <li>350g plain flour</li>
+              <li>100g caster sugar</li>
+              <li>1 large egg</li>
+              <li>300g mincemeat</li>
+              <li>Icing sugar, for dusting</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="fw-bolder pt-2">Instructions</h3>
+
+        <ol>
+          <li>
+            Make the pastry: Rub the butter into the flour until the mixture
+            resembles breadcrumbs. Stir in the sugar, then bind the mixture
+            with the egg. Knead lightly, wrap in cling film, and chill for 30
+            minutes.
+          </li>
+          <li>
+            Preheat oven to 200°C (400°F).
+          </li>
+          <li>
+            Roll out the pastry to about 3mm thick. Cut out circles with a
+            pastry cutter and line a muffin tin with the circles.
+          </li>
+          <li>
+            Spoon a teaspoon of mincemeat into each pastry case.
+          </li>
+          <li>
+            Cut smaller circles or shapes for the lids. Place them on top and
+            press edges to seal.
+          </li>
+          <li>
+            Bake for 20 minutes until golden. Cool, dust with icing sugar, and
+            serve.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Eggnog recipe -->
+
+    <div class="card rounded shadow-lg">
+      <div class="card-body" id="eggnog">
+        <h2 class="fw-bold pb-2">Eggnog</h2>
+
+        <div class="flex-container">
+          <!-- ChatGPT-generated image -->
+          <img class="rounded" src="assets/img/recipe_images/eggnog.webp" alt="eggnog" />
+
+          <div class="ingredients">
+            <h3 class="fw-bolder">Ingredients</h3>
+
+            <ul class="ingredients-list">
+              <li>4 large egg yolks</li>
+              <li>100g caster sugar</li>
+              <li>500ml whole milk</li>
+              <li>250ml double cream</li>
+              <li>1 tsp vanilla extract</li>
+              <li>1 tsp ground nutmeg (plus extra for garnish)</li>
+              <li>120ml dark rum, bourbon, or brandy (optional)</li>
+              <li>4 large egg whites (optional, for extra froth)</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="fw-bolder pt-2">Instructions</h3>
+
+        <ol>
+          <li>
+            Whisk the egg yolks and sugar in a bowl until pale and thick.
+          </li>
+          <li>
+            Heat the milk, cream, vanilla, and nutmeg in a saucepan over medium
+            heat until steaming (do not boil).
+          </li>
+          <li>
+            Gradually whisk the hot milk into the egg yolk mixture. Return the
+            mixture to the saucepan and cook gently, stirring constantly, until
+            it thickens slightly.
+          </li>
+          <li>
+            Remove from heat and cool. Stir in the alcohol if using.
+          </li>
+          <li>
+            If you want a frothy finish, whisk the egg whites until soft peaks
+            form, then fold into the eggnog before serving.
+          </li>
+          <li>
+            Chill, garnish with nutmeg, and serve.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Mulled Wine recipe -->
+
+    <div class="card rounded shadow-lg">
+      <div class="card-body" id="mulled">
+        <h2 class="fw-bold pb-2">Mulled Wine</h2>
+
+        <div class="flex-container">
+          <!-- ChatGPT-generated image -->
+          <img class="rounded" src="assets/img/recipe_images/mulled-wine.webp" alt="mulled wine" />
+
+          <div class="ingredients">
+            <h3 class="fw-bolder">Ingredients</h3>
+
+            <ul class="ingredients-list">
+              <li>750ml red wine (e.g., Merlot or Shiraz)</li>
+              <li>150ml orange juice</li>
+              <li>2 oranges, sliced</li>
+              <li>2 cinnamon sticks</li>
+              <li>4 cloves</li>
+              <li>3 star anise</li>
+              <li>75g brown sugar</li>
+              <li>50ml brandy (optional)</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="fw-bolder pt-2">Instructions</h3>
+
+        <ol>
+          <li>
+            Combine the wine, orange juice, orange slices, cinnamon sticks,
+            cloves, star anise, and sugar in a large saucepan.
+          </li>
+          <li>
+            Heat gently over low heat for 10-15 minutes, stirring to dissolve
+            the sugar. Do not let it boil.
+          </li>
+          <li>
+            Stir in the brandy, if using, and remove from heat.
+          </li>
+          <li>
+            Strain into mugs or glasses and garnish with orange slices or a
+            cinnamon stick.
+          </li>
+        </ol>
+      </div>
+    </div>
+
   </div> <!-- /.recipe-container -->
 
   <!-- footer -->
   <footer class="py-3 shadow-lg mt-auto">
     <div class="container text-center">
       <p class="copyright fs-5 mb-1">&copy; 2024 How to Christmas</p>
-      <p class="">All rights reserved</p>
-      <p class="mb-1">Created by:</p>
-      <ul class="list-inline mb-0">
-        <li class="list-inline-item pb-2">
-          <a href="https://github.com/KelvinC181" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/kevin-chan-b7103b135/" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-linkedin"></i>
-          </a>
-          <span class="team-member">Kelvin Chan</span>
-        </li>
-        <li class="list-inline-item pb-2">
-          <a href="https://github.com/JaimieHemmings" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-github"></i>
-            <a href="https://www.linkedin.com/in/jaimiehemmings/" class="team text-decoration-none" target="_blank">
-              <i class="fs-5 fab fa-linkedin"></i>
-            </a>
-            <span class="team-member">Jaimie Hemmings</span>
-        </li>
-        <li class="list-inline-item pb-2">
-          <a href="https://github.com/KarolSU96" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/karolsu/" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-linkedin"></i>
-          </a>
-          <span class="team-member">Karol Suszek</span>
-        </li>
-        <li class="list-inline-item pb-2">
-          <a href="https://github.com/niall-code" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/niall-caplis/" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-linkedin"></i>
-          </a>
-          <span class="team-member">Niall Caplis</span>
-        </li>
-        <li class="list-inline-item pb-2">
-          <a href="https://github.com/CARRIXK" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/carrick-entwistle/" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-linkedin"></i>
-          </a>
-          <span class="team-member">Carrick Entwistle</span>
-        </li>
-        <li class="list-inline-item pb-2">
-          <a href="https://github.com/violaberg" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/viola-bergere/" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-linkedin"></i>
-          </a>
-          <span class="team-member">Viola Bergere</span>
-        </li>
-        <li class="list-inline-item pb-2">
-          <a href="https://github.com/Noah-Samawi" class="team text-decoration-none" target="_blank">
-            <i class="fs-5 fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/noah-al-samawi-058583197/" class="team text-decoration-none"
-            target="_blank">
-            <i class="fs-5 fab fa-linkedin"></i>
-          </a>
-          <span class="team-member">Noah Samawi</span>
-        </li>
-      </ul>
+      <p class="pb-3">All rights reserved</p>
+      <a class="primary-btn team-link p-2 fs-5 text-decoration-none" href="team.html">Meet the Team</a>
     </div>
   </footer>
 
@@ -605,6 +750,11 @@
   <script src="assets/js/script.js"></script>
   <script src="assets/js/recipes.js"></script>
 
+    <!-- chat bot script -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/12/13/15/20241213154249-DO9PL7MP.js"></script>
+
 </body>
+
 
 </html>

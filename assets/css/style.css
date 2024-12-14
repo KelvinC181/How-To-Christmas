@@ -64,6 +64,7 @@ h3 {
   /* W3C */
   background-color: var(--primary-color) !important;
   font-family: var(--title-font);
+  z-index: 2;
 }
 
 .navbar-brand,
@@ -127,6 +128,7 @@ footer {
   background: radial-gradient(ellipse at center, #d35448 0%, #4a110c 100%);
   /* W3C */
   background-color: var(--primary-color);
+  z-index: 2;
 }
 
 .team-member {
@@ -653,6 +655,9 @@ footer i {
 .canvas-container {
   position: relative;
   width: 100%;
+  height: 100vh;
+  overflow:hidden;
+  z-index: 1;
 
   canvas {
     position: relative;
@@ -675,6 +680,7 @@ footer i {
   z-index: 2;
   opacity: 1;
   transition: opacity 1s ease;
+  pointer-events: none;
 
   h2 {
     font-size: 5rem;
@@ -683,8 +689,81 @@ footer i {
   }
 }
 
+.spinner {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 1s ease;
+  background: linear-gradient(90deg, #2F7336, #AA3A38);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) { animation-delay: -0.036s; }
+  .lds-roller div:nth-child(1):after { top: 63px; left: 63px; }
+  .lds-roller div:nth-child(2) { animation-delay: -0.072s; }
+  .lds-roller div:nth-child(2):after { top: 68px; left: 56px; }
+  .lds-roller div:nth-child(3) { animation-delay: -0.108s; }
+  .lds-roller div:nth-child(3):after { top: 71px; left: 48px; }
+  .lds-roller div:nth-child(4) { animation-delay: -0.144s; }
+  .lds-roller div:nth-child(4):after { top: 72px; left: 40px; }
+  .lds-roller div:nth-child(5) { animation-delay: -0.18s; }
+  .lds-roller div:nth-child(5):after { top: 71px; left: 32px; }
+  .lds-roller div:nth-child(6) { animation-delay: -0.216s; }
+  .lds-roller div:nth-child(6):after { top: 68px; left: 24px; }
+  .lds-roller div:nth-child(7) { animation-delay: -0.252s; }
+  .lds-roller div:nth-child(7):after { top: 63px; left: 17px; }
+  .lds-roller div:nth-child(8) { animation-delay: -0.288s; }
+  .lds-roller div:nth-child(8):after { top: 56px; left: 12px; }
+}
+
+.spinner-hidden {
+  opacity: 0;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .canvas-overlay.hidden {
   opacity: 0;
+}
+
+.audio-player {
+  position: relative;
+  z-index: 10; 
+  pointer-events:auto;
 }
 
 /* recipe */
@@ -720,62 +799,35 @@ footer i {
 #recipe-body li {
   margin: 5px;
 }
-#recipe-body .intro-p{
-  font-family: 'Mountains of Christmas', cursive;
-}
 
 /* Recipe Links */
 
-#links-container {
+#recipe-body #links-container {
   max-width: 500px;
-  margin: 20px auto;
-  background-color: #fffaf2;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-<<<<<<< HEAD
-#christmas-bg {
-  padding: 20px;
-=======
 #recipe-body .flex-links {
   display: flex;
   flex-direction: column;
 }
 
 #recipe-body #christmas-bg {
->>>>>>> main
   background-image: url("../img/recipe_images/recipe-link-background-image.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 15px;
 }
 
-<<<<<<< HEAD
-.flex-columns {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Adds space between the two columns */
-=======
 #recipe-body a {
   text-decoration: none;
   color: black;
   font-weight: bold;
->>>>>>> main
 }
 
-.flex-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+#recipe-body a:hover {
+  color: blue;
 }
 
-<<<<<<< HEAD
-.flex-links li {
-  font-family: 'Mountains of Christmas', cursive;
-  font-size: 1.2rem;
-=======
 #recipe-body #myBtn {
   display: none;
   /* Hidden by default */
@@ -803,40 +855,11 @@ footer i {
 ::marker {
   font-family: 'Mountains of Christmas';
   font-size: 1.3rem;
->>>>>>> main
   color: var(--feature-color-3);
-  text-align: left;
 }
-
-.flex-links li a {
-  text-decoration: none;
-  color: #333;
-  padding: 8px 12px;
-  display: inline-block;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease;
-}
-
-.flex-links li a:hover {
-  color: #fff;
-  background-color: var(--feature-color-3);
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.centered-columns {
-  justify-content: space-around; /* Keeps the two columns closer to the center */
-}
-
 
 /* Media Queries */
 
-<<<<<<< HEAD
-@media (max-width: 768px) {
-  #links-container {
-    padding: 10px;
-=======
 /* small screens */
 @media screen and (max-width: 425px) {
   #recipe-body .card {
@@ -856,17 +879,18 @@ footer i {
 @media screen and (min-width: 1024px) {
   #recipe-body .flex-container {
     display: flex;
->>>>>>> 3d025829d1d8471d263829724e11cc1e6139ea85
   }
 
-  .flex-columns {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Reduce gap for smaller screens */‚
+  #recipe-body .ingredients {
+    margin-left: 20px;
   }
 
-  .flex-links {
-    text-align: center;
+  .ingredients-list {
+    list-style-type: circle;
+  }
+
+  #recipe-body img {
+    max-width: 400px;
   }
 }
 
@@ -901,7 +925,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--primary-font);
+  font-family: var(--title-font);
   color: var(--feature-color-3);
   position: relative;
 }
@@ -968,15 +992,16 @@ h5 {
 }
 
 .male .accordion-button {
-  background: linear-gradient(90deg, blue, var(--secondary-color))
+  background: linear-gradient(90deg, #0461B8, var(--secondary-color))
 }
 
 .female .accordion-button {
-  background: linear-gradient(90deg, pink, var(--secondary-color))
+  background: linear-gradient(90deg, #CC1470, var(--secondary-color))
 }
 
 .child .accordion-button {
-  background: linear-gradient(90deg, yellow, var(--secondary-color))
+  background: linear-gradient(90deg, #D67206, var(--secondary-color));
+  color: var(--font-color);
 }
 
 #gift-section .img-fluid {

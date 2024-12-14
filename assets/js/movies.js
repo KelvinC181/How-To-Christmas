@@ -57,6 +57,15 @@ async function displayChristmasMovies() {
         `;
 
         movieRow.appendChild(movieCard);
+        setTimeout(() => {
+          const spinner = document.querySelector('.spinner');
+          spinner.classList.add('spinner-hidden');
+          setTimeout(() => {
+              spinner.classList.add('d-none');
+          }, 1000);
+      }, 1000);
+
+        
       });
     } else {
       movieRow.innerHTML = '<p>No movies found</p>';

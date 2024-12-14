@@ -129,7 +129,7 @@ footer {
   background-color: var(--primary-color);
 }
 
-.team-member {
+.team-link {
   color: var(--background-color);
   font-family: var(--title-font);
 }

@@ -655,6 +655,7 @@ footer i {
   width: 100%;
   height: 100vh;
   overflow:hidden;
+  z-index: 1;
 
   canvas {
     position: relative;
@@ -677,6 +678,7 @@ footer i {
   z-index: 2;
   opacity: 1;
   transition: opacity 1s ease;
+  pointer-events: none;
 
   h2 {
     font-size: 5rem;
@@ -687,6 +689,12 @@ footer i {
 
 .canvas-overlay.hidden {
   opacity: 0;
+}
+
+.audio-player {
+  position: relative;
+  z-index: 10; 
+  pointer-events:auto;
 }
 
 /* recipe */
@@ -736,17 +744,15 @@ footer i {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-<<<<<<< HEAD
 #christmas-bg {
   padding: 20px;
-=======
+}
 #recipe-body .flex-links {
   display: flex;
   flex-direction: column;
 }
 
 #recipe-body #christmas-bg {
->>>>>>> main
   background-image: url("../img/recipe_images/recipe-link-background-image.png");
   background-size: cover;
   background-position: center;
@@ -754,17 +760,15 @@ footer i {
   border-radius: 15px;
 }
 
-<<<<<<< HEAD
 .flex-columns {
   display: flex;
   justify-content: center;
   gap: 20px; /* Adds space between the two columns */
-=======
+}
 #recipe-body a {
   text-decoration: none;
   color: black;
   font-weight: bold;
->>>>>>> main
 }
 
 .flex-links {
@@ -773,11 +777,10 @@ footer i {
   margin: 0;
 }
 
-<<<<<<< HEAD
 .flex-links li {
   font-family: 'Mountains of Christmas', cursive;
   font-size: 1.2rem;
-=======
+}
 #recipe-body #myBtn {
   display: none;
   /* Hidden by default */
@@ -805,7 +808,6 @@ footer i {
 ::marker {
   font-family: 'Mountains of Christmas';
   font-size: 1.3rem;
->>>>>>> main
   color: var(--feature-color-3);
   text-align: left;
 }
@@ -834,11 +836,11 @@ footer i {
 
 /* Media Queries */
 
-<<<<<<< HEAD
 @media (max-width: 768px) {
   #links-container {
     padding: 10px;
-=======
+  }
+}
 /* small screens */
 @media screen and (max-width: 425px) {
   #recipe-body .card {
@@ -858,13 +860,12 @@ footer i {
 @media screen and (min-width: 1024px) {
   #recipe-body .flex-container {
     display: flex;
->>>>>>> 3d025829d1d8471d263829724e11cc1e6139ea85
   }
 
   .flex-columns {
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Reduce gap for smaller screens */‚
+    gap: 10px; /* Reduce gap for smaller screens */
   }
 
   .flex-links {
@@ -903,7 +904,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--primary-font);
+  font-family: var(--title-font);
   color: var(--feature-color-3);
   position: relative;
 }
@@ -970,15 +971,16 @@ h5 {
 }
 
 .male .accordion-button {
-  background: linear-gradient(90deg, blue, var(--secondary-color))
+  background: linear-gradient(90deg, #0461B8, var(--secondary-color))
 }
 
 .female .accordion-button {
-  background: linear-gradient(90deg, pink, var(--secondary-color))
+  background: linear-gradient(90deg, #CC1470, var(--secondary-color))
 }
 
 .child .accordion-button {
-  background: linear-gradient(90deg, yellow, var(--secondary-color))
+  background: linear-gradient(90deg, #D67206, var(--secondary-color));
+  color: var(--font-color);
 }
 
 #gift-section .img-fluid {

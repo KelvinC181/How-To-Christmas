@@ -1093,6 +1093,22 @@ h5 {
   transform: translate(-50%, -50%);
 }
 
+/* about */
+.accordion {
+  border: 2px solid var(--feature-color-3);
+}
+.accordion-button {
+  background-color: var(--very-light-cream) !important;
+  color: var(--feature-color-2);
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  color: var(--feature-color-3);
+}
+.accordion-button:not(.collapsed) {
+  color: var(--feature-color-3) !important;
+}
+
 /* jokes */
 .primary-btn {
   font-family: var(--title-font);

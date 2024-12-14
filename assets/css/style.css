@@ -26,9 +26,14 @@
 /* general styles */
 
 body {
-  background-color: var(--very-light-cream) !important;
+  background: rgb(245,235,224);
+  background-image: url('../img/tile-bg.png');
   font-family: var(--primary-font) !important;
   letter-spacing: 2px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 h1,
@@ -645,8 +650,6 @@ footer i {
 }
 
 /* home */
-
-
 .canvas-container {
   position: relative;
   width: 100%;
@@ -739,10 +742,35 @@ footer i {
 #recipe-body a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 #recipe-body a:hover {
   color: blue;
+}
+
+#recipe-body #myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  /* Place button at bottom of page */
+  right: 30px;
+  /* Place button 30px from right */
+  z-index: 99;
+  /* Ensure cannot overlap */
+  border: none;
+  outline: none;
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#recipe-body #myBtn:hover {
+  background-color: #555;
 }
 
 ::marker {
@@ -753,6 +781,22 @@ footer i {
 
 /* Media Queries */
 
+/* small screens */
+@media screen and (max-width: 425px) {
+  #recipe-body .card {
+    margin: 0 5px 10px;
+  }
+}
+
+/* medium screens */
+@media screen and (min-width: 768px) {
+  /* Gifts */
+  #gift-section .card-body {
+    min-height: 368px;
+  }
+}
+
+/* large screens */
 @media screen and (min-width: 1024px) {
   #recipe-body .flex-container {
     display: flex;
@@ -771,13 +815,30 @@ footer i {
   }
 }
 
-@media screen and (max-width: 425px) {
-  #recipe-body .card {
-    margin: 0 5px 10px;
+/* xxl screens */
+@media screen and (min-width: 1920px) {
+  /* Gifts */
+  #gift-section .card-body {
+    min-height: 393px;
+  }
+
+  #gift-section .card-title {
+    font-size: 1.75rem;
+  }
+  #gift-section p {
+    font-size: 1.25rem;
   }
 }
 
 /* movies */
+.movie-container .card {
+  border: 2px solid var(--feature-color-3);
+}
+
+.movie-img {
+  border: 2px solid var(--feature-color-3);
+  border-radius: 5px;
+}
 
 /* gifts */
 #gift-section h1,
@@ -786,15 +847,17 @@ h3,
 h4,
 h5 {
   font-family: var(--primary-font);
+  color: var(--feature-color-3);
+  position: relative;
 }
 
 #gift-section p {
   font-family: var(--secondary-font);
+  color: var(--feature-color-3);
 }
 
 #gift-section .accordion-button {
   color: white;
-  border-radius: 10px;
   font-weight: bold;
   text-transform: uppercase;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -819,7 +882,7 @@ h5 {
 #gift-section .accordion-body {
   background: var(--background-color);
   padding: 15px;
-  border-top: 2px solid var(--feature-color-3);
+  border-top: 2px;
   color: var(--font-color);
 }
 
@@ -829,16 +892,24 @@ h5 {
 }
 
 #gift-section .card {
-  border: none;
+  border: solid 4px var(--secondary-color);
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-
+  background-color: var(--very-light-cream);
 }
 
 #gift-section .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#gift-section .card-header {
+  background-color: var(--secondary-color);
+}
+
+#gift-section .card-title {
+  font-weight: bold;
 }
 
 .male .accordion-button {
@@ -851,6 +922,18 @@ h5 {
 
 .child .accordion-button {
   background: linear-gradient(90deg, yellow, var(--secondary-color))
+}
+
+#gift-section .img-fluid {
+  margin-bottom: 1em;
+}
+
+.ribbon {
+  width: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1000;
 }
 
 /* jokes */

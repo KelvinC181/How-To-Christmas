@@ -17,12 +17,12 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
 
-<body id="recipe-body">
+<body class="body-class d-flex flex-column min-vh-100" id="recipe-body">
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark shadow-lg py-3">
     <div class="container-fluid px-0">
       <img class="logo" src="assets/img/grinch-logo.png" alt="">
-      <a class="fs-3 navbar-brand" href="index.html">How to Christmas</a>
+      <a class="fs-2 fw-bold navbar-brand" href="index.html">How to Christmas</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,7 +61,7 @@
   <!-- main content -->
   <header class="text-center">
     <h1 class="fw-bold pt-3">Christmas Recipes</h1>
-    <p>
+    <p class="fw-bold">
       Share the taste of Christmas with your loved ones,
       with the help of these classic festive recipes.
     </p>
@@ -94,8 +94,9 @@
         </div>
 
       </div>
-
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <!-- Roast Turkey recipe -->
 
@@ -522,7 +523,7 @@
   </div> <!-- /.recipe-container -->
 
   <!-- footer -->
-  <footer class="py-3 shadow-lg">
+  <footer class="py-3 shadow-lg mt-auto">
     <div class="container text-center">
       <p class="copyright fs-5 mb-1">&copy; 2024 How to Christmas</p>
       <p class="">All rights reserved</p>
@@ -602,6 +603,7 @@
 
   <!-- custom script -->
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/recipes.js"></script>
 
 </body>
 

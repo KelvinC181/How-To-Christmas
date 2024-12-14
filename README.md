@@ -50,8 +50,12 @@ Snowflakes: https://codepen.io/siddharth-nalwaya/pen/wvXZqbq
 
 Christmas jokes: https://github.com/marcyvillegas/random-joke-generator/tree/main, https://sv443.net/jokeapi/v2/#categories
 
-homepage hero css gradient: https://gradient.page/ui-gradients/christmas
+Homepage hero css gradient: https://gradient.page/ui-gradients/christmas
+
+Pattern - https://patternico.com/
 
 ## Credit
 
 - The recipe page's ingredients and instructions text and accompanying images were generated with ChatGPT.
+
+- The HTML, CSS, and JavaScript for the recipe page's 'scroll to top' button were sourced from [a W3Schools page](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp).

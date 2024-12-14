@@ -730,23 +730,13 @@ footer i {
 #recipe-body li {
   margin: 5px;
 }
-#recipe-body .intro-p{
-  font-family: 'Mountains of Christmas', cursive;
-}
 
 /* Recipe Links */
 
-#links-container {
+#recipe-body #links-container {
   max-width: 500px;
-  margin: 20px auto;
-  background-color: #fffaf2;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-#christmas-bg {
-  padding: 20px;
-}
 #recipe-body .flex-links {
   display: flex;
   flex-direction: column;
@@ -754,33 +744,21 @@ footer i {
 
 #recipe-body #christmas-bg {
   background-image: url("../img/recipe_images/recipe-link-background-image.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 15px;
 }
 
-.flex-columns {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Adds space between the two columns */
-}
 #recipe-body a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
-.flex-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+#recipe-body a:hover {
+  color: blue;
 }
 
-.flex-links li {
-  font-family: 'Mountains of Christmas', cursive;
-  font-size: 1.2rem;
-}
 #recipe-body #myBtn {
   display: none;
   /* Hidden by default */
@@ -809,38 +787,10 @@ footer i {
   font-family: 'Mountains of Christmas';
   font-size: 1.3rem;
   color: var(--feature-color-3);
-  text-align: left;
 }
-
-.flex-links li a {
-  text-decoration: none;
-  color: #333;
-  padding: 8px 12px;
-  display: inline-block;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease;
-}
-
-.flex-links li a:hover {
-  color: #fff;
-  background-color: var(--feature-color-3);
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.centered-columns {
-  justify-content: space-around; /* Keeps the two columns closer to the center */
-}
-
 
 /* Media Queries */
 
-@media (max-width: 768px) {
-  #links-container {
-    padding: 10px;
-  }
-}
 /* small screens */
 @media screen and (max-width: 425px) {
   #recipe-body .card {
@@ -862,14 +812,16 @@ footer i {
     display: flex;
   }
 
-  .flex-columns {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Reduce gap for smaller screens */
+  #recipe-body .ingredients {
+    margin-left: 20px;
   }
 
-  .flex-links {
-    text-align: center;
+  .ingredients-list {
+    list-style-type: circle;
+  }
+
+  #recipe-body img {
+    max-width: 400px;
   }
 }
 

@@ -42,7 +42,7 @@ Bootstrap: https://getbootstrap.com/
 
 ThreeJS: https://threejs.org/
 
-Tavern In Snow: https://sketchfab.com/3d-models/tavern-in-snow-f999dd375bce43a0bd1bcfe218a550a7
+models: https://sketchfab.com
 
 Christmas button: https://codepen.io/TackOnes1/pen/MaLQjr
 

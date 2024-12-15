@@ -84,17 +84,63 @@
   <!-- Category Navigation -->
   
     <div class="category-nav mx-auto">
-      <button class="primary-btn p-2" id="outdoor-activities" onclick="showCategory('outdoor')">Outdoor
-        Activities</button>
-      <button class="primary-btn p-2" onclick="showCategory('indoor')">Indoor Activities</button>
-      <button class="primary-btn p-2" onclick="showCategory('family')">Family-Friendly</button>
+      <button class="primary-btn p-2" id="outdoor-activities" onclick="showCategory('christmas-markets')">Christmas Markets</button>
+      <button class="primary-btn p-2" onclick="showCategory('illuminations')">Illuminations</button>
+      <button class="primary-btn p-2" onclick="showCategory('ice-rinks')">Ice Rinks</button>
+      <button class="primary-btn p-2" onclick="showCategory('christmas-experiences')">Christmas Experiences</button>
+      <button class="primary-btn p-2" onclick="showCategory('santa-visits')">Santa Visits</button>
     </div>
 
     <!-- Activities Section -->
     <div class="container text-center">
-      <!-- Outdoor Activities -->
-      <div class="category" id="outdoor">
-        <h2 class="fw-bolder text-center">Outdoor Activities</h2>
+
+      <!-- Christmas markets -->
+      <div class="category" id="christmas-markets">
+
+        <h2 class="fw-bolder text-center">Christmas-markets</h2>
+
+        <div class="row">
+
+          <!-- Edinburgh christmas markets -->
+          <div class="col-md-4">
+            <div class="activity-card card">
+              <img src="path/to/image1.jpg" class="card-img-top" alt="Activity 1">
+              <div class="card-body">
+                <h5 class="card-title">Edinburgh</h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="activity-card card">
+              <img src="path/to/image2.jpg" class="card-img-top" alt="Activity 2">
+              <div class="card-body">
+                <h5 class="card-title">Activity 2</h5>
+                <p class="card-text">Description of Activity 2.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="activity-card card">
+              <img src="path/to/image3.jpg" class="card-img-top" alt="Activity 3">
+              <div class="card-body">
+                <h5 class="card-title">Activity 3</h5>
+                <p class="card-text">Description of Activity 3.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Illuminations -->
+      <div class="category" id="illuminations">
+        <h2 class="fw-bolder text-center">Illuminations</h2>
         <div class="row">
           <!-- Card 1 -->
           <div class="col-md-4">
@@ -131,9 +177,9 @@
         </div>
       </div>
 
-      <!-- Indoor Activities -->
-      <div class="category" id="indoor">
-        <h2 class="fw-bolder text-center">Indoor Activities</h2>
+      <!-- Ice Rinks -->
+      <div class="category" id="ice-rinks">
+        <h2 class="fw-bolder text-center">Ice Rinks</h2>
         <div class="row">
           <!-- Card 1 -->
           <div class="col-md-4">
@@ -170,9 +216,9 @@
         </div>
       </div>
 
-      <!-- Family-Friendly Activities -->
-      <div class="category" id="family">
-        <h2 class="fw-bolder text-center">Family-Friendly Activities</h2>
+      <!-- Christmas Experiences -->
+      <div class="category" id="christmas-experiences">
+        <h2 class="fw-bolder text-center">Christmas Experiences</h2>
         <div class="row">
           <!-- Card 1 -->
           <div class="col-md-4">
@@ -198,7 +244,46 @@
 
           <!-- Card 3 -->
           <div class="col-md-4">
+            <div class="activity-card card rounded shadow-lg">
+              <img src="path/to/image3.jpg" class="card-img-top" alt="Activity 3">
+              <div class="card-body">
+                <h5 class="card-title">Activity 3</h5>
+                <p class="card-text">Description of Activity 3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Santa Visits -->
+      <div class="category" id="santa-visits">
+        <h2 class="fw-bolder text-center">Santa Visits</h2>
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4">
             <div class="activity-card card">
+              <img src="path/to/image1.jpg" class="card-img-top" alt="Activity 1">
+              <div class="card-body">
+                <h5 class="card-title">Activity 1</h5>
+                <p class="card-text">Description of Activity 1.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="activity-card card">
+              <img src="path/to/image2.jpg" class="card-img-top" alt="Activity 2">
+              <div class="card-body">
+                <h5 class="card-title">Activity 2</h5>
+                <p class="card-text">Description of Activity 2.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="activity-card card rounded shadow-lg">
               <img src="path/to/image3.jpg" class="card-img-top" alt="Activity 3">
               <div class="card-body">
                 <h5 class="card-title">Activity 3</h5>
@@ -211,8 +296,8 @@
 
    
 
-    </div>
-
+    </div>  <!-- End of activities section -->
+   
         
          
 
@@ -247,7 +332,7 @@
 
     // Set Outdoor Activities as active when the page loads
     document.addEventListener('DOMContentLoaded', () => {
-      showCategory('outdoor');
+      showCategory('christmas-markets');
     });
   </script>
 

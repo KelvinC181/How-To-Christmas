@@ -5,8 +5,9 @@
 ## **🎄 Hack the Holidays: Submission Details**  
 
 ### **Deployment**   
-The project is deployed and can be accessed at:  
-**https://kelvinc181.github.io/How-To-Christmas/index.html**  
+The project is deployed and can be accessed at: https://kelvinc181.github.io/How-To-Christmas/
+
+The team's kanban board: https://github.com/users/KelvinC181/projects/9
 
 ---
 
@@ -39,6 +40,34 @@ The **Goal** section provides a concise summary of the main objective or purpose
 
 ---
 
+## Pages
+
+### Home Page
+
+![home page screen capture](assets/img/readme_images/home-page.png)
+
+### About Page
+
+![about page screen capture](assets/img/readme_images/about-page.png)
+
+### Gifts Page
+
+![gifts page screen capture](assets/img/readme_images/gifts-page.png)
+
+### Jokes Page
+
+![jokes page screen capture](assets/img/readme_images/jokes-page.png)
+
+### Movies Page
+
+![movies page screen capture](assets/img/readme_images/movies-page.png)
+
+### Recipes Page
+
+![recipes page screen capture](assets/img/readme_images/recipes-page.png)
+
+---
+
 ## **💻 Tech Stack**  
 - Frontend: HTML, CSS, JavaScript  
 - Version Control: Git & GitHub  
@@ -50,7 +79,8 @@ The **Goal** section provides a concise summary of the main objective or purpose
 
 ---
 
-## **🌟 Credits**  
+## Credit
+
 - The recipe page's ingredients and instructions text and accompanying images were generated with ChatGPT.
 - The HTML, CSS, and JavaScript for the recipe page's 'scroll to top' button were sourced from [a W3Schools page](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp). 
 - Tavern In Snow: https://sketchfab.com/3d-models/tavern-in-snow-f999dd375bce43a0bd1bcfe218a550a7
@@ -60,6 +90,7 @@ The **Goal** section provides a concise summary of the main objective or purpose
 - Homepage hero css gradient: https://gradient.page/ui-gradients/christmas
 - Pattern - https://patternico.com/
 - AI music generator - https://aisonggenerator.io/
+- Models: https://sketchfab.com
 
 Team:
 - Kelvin Chan - https://github.com/KelvinC181

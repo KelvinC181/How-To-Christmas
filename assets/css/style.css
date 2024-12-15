@@ -129,7 +129,9 @@ h3 {
 .navbar a:hover::before {
   transform: scaleX(1);
 }
-
+#navbarNav{
+  
+}
 .logo {
   height: auto;
   width: 70px;

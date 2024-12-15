@@ -1,3 +1,4 @@
+# ![Logo](assets/img/readme_images/chrismas.jpg)
 # 🎅✨ Hack the Holidays! 🎄🎁 
 
 # 🎄🎁 How to Christmas 🎄🎁
@@ -29,6 +30,7 @@ Welcome to How to Christmas, your ultimate guide to making the most of the holid
 Dive into our unique features, like the AI-generated Christmas song that sets the perfect festive tone, or laugh out loud with our joke generator. Explore indoor and outdoor activities for all ages, discover thoughtful gift suggestions, and whip up holiday magic in the kitchen with our curated recipes. At How to Christmas, we’re here to add a sprinkle of joy, creativity, and holiday cheer to your celebrations. Let’s make this Christmas your most magical one yet!  
 
 ---
+![Mockup image](assets/img/readme_images/mockup.jpg) <br>
 
 ### **Goal**  
 The **Goal** section provides a concise summary of the main objective or purpose of the project described in this README. It addresses the following aspects:  
@@ -68,6 +70,13 @@ The **Goal** section provides a concise summary of the main objective or purpose
 
 ---
 
+#### Colour
+
+![recipes page screen capture](assets/img/readme_images/colour.jpg)
+
+The color palette was thoughtfully designed to evoke the festive warmth of the holiday season while maintaining a connection to nature's charm. Dark red (#7a231d) serves as the primary color, symbolizing passion, tradition, and the cozy essence of Christmas. Medium dark green (#4d5d45) represents the evergreen trees, embodying growth, renewal, and a deep connection to nature. Light yellow (#fff8de) offers a soft, welcoming glow, reminiscent of candlelight and holiday warmth. Very light cream (#f5ebe0) provides a gentle, neutral backdrop, adding a sense of comfort and refinement. Dark green (#474b41) anchors the design with stability and elegance, echoing the deep, rich tones of a winter forest. Red (#b43b2b) adds a festive, vibrant touch, enhancing the celebratory feel of the palette. Light dark green (#667256) introduces a subtle contrast, representing the natural beauty of winter foliage with sophistication.
+
+---
 ## **💻 Tech Stack**  
 - Frontend: HTML, CSS, JavaScript  
 - Version Control: Git & GitHub  

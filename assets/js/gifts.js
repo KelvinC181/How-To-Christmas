@@ -7,7 +7,7 @@ const toastBootstrap = new bootstrap.Toast(itemAddedToast);
 // Function to add an item to the shopping list
 function addToShoppingList(cardTitle) {
   const listItem = document.createElement('li');
-  listItem.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+  listItem.classList.add('list-group-item', 'd-flex', 'justify-content-around', 'align-items-center');
 
   listItem.textContent = cardTitle;
 

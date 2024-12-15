@@ -899,8 +899,61 @@ footer i {
   pointer-events: auto;
 }
 
-/* recipe */
+/* neon text */
+.neon-text {
+  font-size: calc(20px + 18vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #283618, 0 0 15px #283618, 0 0 20px #283618, 0 0 40px #283618, 0 0 60px #7a231d, 0 0 10px #283618, 0 0 98px #7a231d;
+  color: #fff8de !important;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
 
+@-webkit-keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #283618, 0 0 15px #283618, 0 0 20px #283618, 0 0 40px #283618, 0 0 60px #7a231d, 0 0 10px #283618, 0 0 98px #7a231d;
+    color: #283618;
+  }
+}
+
+@keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+/* recipe */
 #recipe-body {
   background-color: #fff8de;
   height: 100vh;

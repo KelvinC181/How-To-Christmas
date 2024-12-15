@@ -129,6 +129,11 @@ h3 {
 .navbar a:hover::before {
   transform: scaleX(1);
 }
+
+.navbar-toggler {
+  margin-right: 0.5rem;
+}
+
 .logo {
   height: auto;
   width: 70px;
@@ -209,6 +214,16 @@ footer i {
 
 .team-card:hover {
   transform: scale(1.01);
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-col {
+  max-width: 400px !important;
 }
 
 /* snowflakes */

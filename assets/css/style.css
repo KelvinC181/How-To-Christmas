@@ -212,6 +212,12 @@ footer i {
   transform: scale(1.01);
 }
 
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* snowflakes */
 .snowflakes {
   position: fixed;

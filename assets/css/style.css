@@ -1136,6 +1136,16 @@ footer i {
   border-radius: 5px;
 }
 
+.movie-text,
+.movie-link {
+  color: var(--very-light-cream) !important;
+  text-decoration: none;
+}
+
+.movie-link:hover {
+  color: var(--background-color);
+}
+
 /* gifts */
 #gift-section h1,
 h2,

@@ -2,7 +2,7 @@ let jokeSetup = document.querySelector("#jokeSetup");
 let jokeContent = document.querySelector("#jokeContent");
 let jokeCard = document.querySelector("#jokeCard");
 let jokeButton = document.querySelector("#jokeButton");
-let jokeImage = document.querySelector("#randomImage"); // Select the image element
+let jokeImage = document.querySelector("#randomImage");
 
 // Array of image paths
 const images = [

@@ -1090,6 +1090,14 @@ h5 {
   font-size: x-large;
 }
 
+.gift-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
 #gift-section .accordion-button {
   color: white;
   font-weight: bold;

@@ -1136,6 +1136,16 @@ footer i {
   border-radius: 5px;
 }
 
+.movie-text,
+.movie-link {
+  color: var(--very-light-cream) !important;
+  text-decoration: none;
+}
+
+.movie-link:hover {
+  color: var(--background-color);
+}
+
 /* gifts */
 #gift-section h1,
 h2,
@@ -1444,28 +1454,16 @@ h5 {
   font-family: var(--title-font);
 }
 
+.joke-img {
+  width: 250px;
+}
+
 /* Activities Page */
 .category-nav {
   display: flex;
   gap: 1rem;
   padding: 1rem;
 }
-
-/*.category-nav button {
-  background-color: #7a231d;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.category-nav button:hover {
-  background-color: #b43b2b;
-  color: white;
-}*/
 
 .activity-card {
   border: 2px solid var(--feature-color-3) !important;

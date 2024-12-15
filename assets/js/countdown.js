@@ -132,13 +132,43 @@ class ChristmasScene {
             child.castShadow = true;
         }
       });
+
+      const colors = [
+        new THREE.Color(0xff0000), // red
+        new THREE.Color(0x00ff00), // green
+        new THREE.Color(0x0000ff), // blue
+        new THREE.Color(0xffff00), // yellow
+        new THREE.Color(0xff00ff), // magenta
+        new THREE.Color(0x00ffff), // cyan
+        new THREE.Color(0xffa500)  // orange
+    ];
+
       // Add gifts randomly
-      for (let i = 0; i < 20; i++) {
-          const gift = this.gift.clone()
-          gift.position.set(Math.random() * 20 - 10, -1.75, Math.random() * 20 - 10)
-          this.scene.add(gift)
-          
-      }
+    for (let i = 0; i < 20; i++) {
+      const gift = this.gift.clone()
+      // Calculate random position in a circle
+      const radius = 1 + Math.random() * 2;
+      const angle = Math.random() * Math.PI * 2;
+      const x = Math.cos(angle) * radius;
+      const z = Math.sin(angle) * radius;
+      
+      gift.position.set(x, -1.75, z);
+      // Random rotation
+      gift.rotation.y = Math.random() * Math.PI * 2; 
+
+
+        // Apply random color to all meshes in the gift
+      gift.traverse((child) => {
+        if (child.isMesh) {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            child.material = child.material.clone(); // Clone material to avoid affecting other gifts
+            child.material.color = randomColor;
+        }
+      });
+
+      this.scene.add(gift)
+        
+    }
   })
   
   gltfLoader.load('assets/models/santa.gltf',

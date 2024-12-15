@@ -69,6 +69,9 @@ class ChristmasScene {
     directionalLight.shadow.mapSize.width = 2048
     directionalLight.shadow.mapSize.height = 2048
     this.scene.add(directionalLight)
+
+    // set up fog
+    this.scene.fog = new THREE.Fog(0xaaaaff, 10, 30)
   }
 
   setupResizeHandler() {

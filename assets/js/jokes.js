@@ -2,9 +2,17 @@ let jokeSetup = document.querySelector("#jokeSetup");
 let jokeContent = document.querySelector("#jokeContent");
 let jokeCard = document.querySelector("#jokeCard");
 let jokeButton = document.querySelector("#jokeButton");
+let jokeImage = document.querySelector("#randomImage");
+
+// Array of image paths
+const images = [
+  "assets/img/elf.png",
+  "assets/img/reindeer.png",
+  "assets/img/santa.png"
+];
 
 /**
- * Fetches joke API
+ * Fetches joke API and updates the image
  */
 let fetchJoke = async () => {
   // Hide the joke card while loading a new joke
@@ -21,6 +29,10 @@ let fetchJoke = async () => {
 
     // Show the joke card
     jokeCard.style.display = "block";
+
+    // Select a random image and update the src
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    jokeImage.src = randomImage;
 
   } catch (error) {
     // Handle errors gracefully

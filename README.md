@@ -1,26 +1,36 @@
 # How to Christmas
 
-"How to Christmas" is a static website that seeks to provide guidance on how to make the most of the festive season. More specifically, it offers recipes, movie suggestions, and gift ideas.
+"How to Christmas" seeks to provide guidance on how to make the most of the festive season. It offers recipes, movie suggestions, gift and activity ideas, jokes, and more.
 
-## The Design, Development, and Deployment Process
+The deployed project: https://kelvinc181.github.io/How-To-Christmas/
 
-### First Team Meeting
+The team's kanban board: https://github.com/users/KelvinC181/projects/9
 
-Our hackathon team had a Slack huddle to discuss the project. We agreed on an idea, added user stories to [a kanban board](https://github.com/users/KelvinC181/projects/9), and considered that we might draw upon the Bootstrap framework for some aspects. We each created a Gitpod workspace from our shared GitHub repository.
+## Pages
 
-### Recipe Page
+### Home Page
 
-#### Basic Recipe Page
+![home page screen capture](assets/img/readme_images/home-page.png)
 
-[Niall](https://github.com/niall-code) drafted a simple recipes page overnight.
+### About Page
 
-> <img src="assets/img/readme_images/basic-recipe-page.png" alt="first draft of recipe page">
+![about page screen capture](assets/img/readme_images/about-page.png)
 
-#### Styling of Recipe Page
+### Gifts Page
 
-[Noah](https://github.com/Noah-Samawi) and [Niall](https://github.com/niall-code) significantly improved the styling of the initial recipe page, by introducing Bootstrap card components around each recipe and by using flexbox to move the ingredients lists from below to alongside the images on large devices.
+![gifts page screen capture](assets/img/readme_images/gifts-page.png)
 
-<img src="assets/img/readme_images/bootstrapped-recipes.png" alt="recipe page after adding Bootstrap">
+### Jokes Page
+
+![jokes page screen capture](assets/img/readme_images/jokes-page.png)
+
+### Movies Page
+
+![movies page screen capture](assets/img/readme_images/movies-page.png)
+
+### Recipes Page
+
+![recipes page screen capture](assets/img/readme_images/recipes-page.png)
 
 ## Technologies
 

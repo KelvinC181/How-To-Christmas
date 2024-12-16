@@ -118,26 +118,32 @@ async function retrieveMovieDetails() {
       document.body.style.backgroundPosition = 'center';
       document.body.style.backgroundAttachment = 'fixed';
       movieDetails.innerHTML = `
-              <h1 class="movie-text">${data.title}</h1>
-              <img class="mb-3 img-fluid movie-img" src="${moviePoster}"
-                alt="${data.title}"
-              />
-              <p class="movie-text">${data.overview}</p>
-              ${data.genres ? `<p class="movie-text">Genres: ${data.genres.map(genre => genre.name).join(', ')}</p>` : ''}
-              ${data.vote_average !== 0 ? `<p class="movie-text">Rating: ${data.vote_average}</p>` : ''}
-              ${data.release_date ? `<p class="movie-text">Release Date: ${data.release_date}</p>` : ''}
-              ${data.runtime ? `<p class="movie-text">Runtime: ${data.runtime} minutes</p>` : ''}
-              <p class="movie-text">
-                Revenue: ${data.revenue ? `$${addCommasToNumber(data.revenue)}` : 'No data available'}
-              </p>
-              <p class="movie-text">
-                Budget: ${data.budget ? `$${addCommasToNumber(data.budget)}` : 'No data available'}
-              </p>
-              <p class="movie-text">Tagline: ${data.tagline}</p>
-              <p class="movie-text">Status: ${data.status}</p>
-              <p class="movie-text">
-                ${data.homepage ? `Homepage: <a class="movie-link" href="${data.homepage}" target="_blank">${data.homepage}</a></p>` : ''}
-              <p class="mt-5"><a href="../movies.html" class="primary-btn p-2 text-decoration-none">Back to Movies</a></p>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="mb-3 img-fluid movie-img" src="${moviePoster}"
+            alt="${data.title}"
+          />
+        </div>
+        <div class="col-md-6">
+          <h1 class="movie-text">${data.title}</h1>
+          <p class="movie-text">${data.overview}</p>
+          ${data.genres ? `<p class="movie-text">Genres: ${data.genres.map(genre => genre.name).join(', ')}</p>` : ''}
+          ${data.vote_average !== 0 ? `<p class="movie-text">Rating: ${data.vote_average}</p>` : ''}
+          ${data.release_date ? `<p class="movie-text">Release Date: ${data.release_date}</p>` : ''}
+          ${data.runtime ? `<p class="movie-text">Runtime: ${data.runtime} minutes</p>` : ''}
+          <p class="movie-text">
+            Revenue: ${data.revenue ? `$${addCommasToNumber(data.revenue)}` : 'No data available'}
+          </p>
+          <p class="movie-text">
+            Budget: ${data.budget ? `$${addCommasToNumber(data.budget)}` : 'No data available'}
+          </p>
+          <p class="movie-text">Tagline: ${data.tagline}</p>
+          <p class="movie-text">Status: ${data.status}</p>
+          <p class="movie-text">
+            ${data.homepage ? `Homepage: <a class="movie-link" href="${data.homepage}" target="_blank">${data.homepage}</a></p>` : ''}
+          <p class="mt-5"><a href="../movies.html" class="primary-btn p-2 text-decoration-none">Back to Movies</a></p>
+        </div>
+      </div>
           `;
     }
   }

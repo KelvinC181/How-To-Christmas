@@ -144,6 +144,23 @@ The color palette was thoughtfully designed to evoke the festive warmth of the h
 
 ---
 
+## Future Development
+
+- Etsy API - Initially we looked into implementing an API to fetch products for gift ideas based on search parameters from Amazon listings. We found the API's freely available for Amazon were extremely limited in their usage (Around 100 requests per month), we then looked at Etsy who had a much more liberal policy about the usage of their free tier but apps had to be registered and reviewed.
+
+We registered the site and requested an API key but as we came close to the deadline the request was still pending approval. Therefore the basic implementation of the API code has been moved to the EtsyAPI branch and removed from the main project.
+
+- Full stack deployment with Django - We would have liked to have implemented Django to provide registration and log in functionality. This in turn would have allowed us to implement additionals features to the project:
+
+  - Wishlists: Allowing users to save gift ideas to a wishlist for future reference.
+  - Save Activities: Functionality similar to the wishlist, allowing users to save activity ideas and information for later reference
+  - Watch later: As the user browses the movies results, this would allow them to save specific movies to a "Watch later" list to refer back to at a future time.
+  - User submissions: Allow the users to submit their own ideas and recommendations for gifts, activities and movie suggestions.
+
+- React: For the front end we would have also liked to have implemented react for a more interactive and dynamic user interface. However: recognizing the varying levels of expertise within our team, we prioritized collaborative learning and created an inclusive development approach that allowed us to build our skills together while making steady progress on the project.
+
+---
+
 ## Credit
 
 - The recipe page's ingredients and instructions text and accompanying images were generated with ChatGPT.

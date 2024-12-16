@@ -83,77 +83,76 @@
   <!-- Category Navigation -->
 
   
-    <div class="category-nav mx-auto">
-      <button class="primary-btn p-2" id="outdoor-activities" onclick="showCategory('christmas-markets')">Christmas Markets</button>
-      <button class="primary-btn p-2" onclick="showCategory('illuminations')">Illuminations</button>
-      <button class="primary-btn p-2" onclick="showCategory('ice-rinks')">Ice Rinks</button>
-      <button class="primary-btn p-2" onclick="showCategory('christmas-experiences')">Christmas Experiences</button>
-      <button class="primary-btn p-2" onclick="showCategory('santa-visits')">Santa Visits</button>
-    </div>
+  <div class="button-group text-center mb-4">
+    <button class="primary-btn p-2" onclick="showCategory('illuminations')">Illuminations</button>
+    <button class="primary-btn p-2" onclick="showCategory('ice-rinks')">Ice Rinks</button>
+    <button class="primary-btn p-2" onclick="showCategory('christmas-experiences')">Christmas Experiences</button>
+    <button class="primary-btn p-2" onclick="showCategory('santa-visits')">Santa Visits</button>
+</div>
 
     <!-- Activities Section -->
     <div class="container text-center">
-
       <!-- Christmas markets -->
-      <div class="category" id="christmas-markets">
-
-        <h2 class="fw-bolder text-center">Christmas-markets</h2>
-
-        <div class="row">
-
-          <!-- Edinburgh christmas markets -->
-          <div class="col-md-4">
-            <div class="activity-card card">
-              <img src="assets/img/activities_images/edinburgh-markets.jpg" class="card-img-top" alt="Edinburgh christmas markets">
-              <div class="card-body">
-                <h2 class="card-title">Edinburgh</h2>
-                <p class="card-text">Edinburgh’s winter festivals, which combine Christmas and Hogmanay from November to January, are among the best times to visit the city. You can pick and choose from many events and things to do. Edinburgh Christmas Market is one of the most popular events, and in this guide, I list the confirmed dates for 2024 with opening times and locations.</p>
-                <div style="text-align: center; margin-top: 50px;">
-                  <button class="primary-btn p-2" onclick="location.href='activities/info-pages/market-1-info.html'">More Info</button>
-                </div>
-              </div>
-
-            </div>
+      <div class="category container pb-5" id="christmas-markets">
+          <div class="row mb-4">
+              <h2 class="fw-bolder">Christmas Markets</h2>
           </div>
-        </div>
-
-
-          <!-- Card 2 -->
-          <div class="col-md-4">
-            <div class="activity-card card">
-              <img src="assets/img/activities_images/manchester-markets.webp" class="card-img-top" alt="Activity 2">
-              <div class="card-body">
-                <h2 class="card-title">Manchester</h2>
-                <p class="card-text">Now in their 26th year, Manchester's Christmas Markets have become legendary, drawing millions to the city centre. With over 200 stalls spread across nine locations, visitors can enjoy seasonal treats, mulled wine, and a wonderful festive atmosphere. Whether you're after handmade gifts, craft items, or delicious food, the markets cater to all tastes and ages.</p>
-                <button class="primary-btn p-2" onclick="location.href='activities/info-pages/market-2-info.html'">More Info</button>
+  
+          <div class="row">
+              <!-- Edinburgh christmas markets -->
+              <div class="col-md-4 mb-4">
+                  <div class="activity-card card h-100">
+                      <img 
+                          src="assets/img/activities_images/edinburgh-markets.jpg" 
+                          class="card-img-top" 
+                          alt="Edinburgh christmas markets"
+                      >
+                      <div class="card-body d-flex flex-column">
+                          <h2 class="card-title">Edinburgh</h2>
+                          <p class="card-text">Edinburgh's winter festivals, which combine Christmas and Hogmanay from November to January, are among the best times to visit the city. You can pick and choose from many events and things to do. Edinburgh Christmas Market is one of the most popular events, and in this guide, I list the confirmed dates for 2024 with opening times and locations.</p>
+                          <button class="primary-btn p-2 mt-auto" onclick="location.href='activities/info-pages/market-1-info.html'">More Info</button>
+                      </div>
+                  </div>
               </div>
-
-            </div>
-          </div>
-        </div>
-
-
-          <!-- Card 3 -->
-          <div class="col-md-4">
-            <div class="activity-card card">
-              <img src="assets/img/activities_images/bath-christmas-markets.jpg" class="card-img-top" alt="Activity 3">
-              <div class="card-body">
-                <h2 class="card-title">Bath</h2>
-                <p class="card-text">
-                  The Bath Christmas Market will return to the heart of Bath stretching across the historic city centre. As you wander through the cobblestone streets, you’ll be immersed in the festive ambiance, while discovering an array of unique handmade gifts from independent makers from Bath and beyond. This market is free to attend and is the perfect way to get into the holiday spirit​</p>
-                <button class="primary-btn p-2" onclick="location.href='activities/info-pages/market-3-info.html'">More Info</button>
+  
+              <!-- Manchester christmas markets -->
+              <div class="col-md-4 mb-4">
+                  <div class="activity-card card h-100">
+                      <img 
+                          src="assets/img/activities_images/manchester-markets.webp" 
+                          class="card-img-top" 
+                          alt="Manchester christmas markets"
+                      >
+                      <div class="card-body d-flex flex-column">
+                          <h2 class="card-title">Manchester</h2>
+                          <p class="card-text">Now in their 26th year, Manchester's Christmas Markets have become legendary, drawing millions to the city centre. With over 200 stalls spread across nine locations, visitors can enjoy seasonal treats, mulled wine, and a wonderful festive atmosphere.</p>
+                          <button class="primary-btn p-2 mt-auto" onclick="location.href='activities/info-pages/market-2-info.html'">More Info</button>
+                      </div>
+                  </div>
               </div>
-
-            </div>
+  
+              <!-- Bath christmas markets -->
+              <div class="col-md-4 mb-4">
+                  <div class="activity-card card h-100">
+                      <img 
+                          src="assets/img/activities_images/bath-christmas-markets.jpg" 
+                          class="card-img-top" 
+                          alt="Bath christmas markets"
+                      >
+                      <div class="card-body d-flex flex-column">
+                          <h2 class="card-title">Bath</h2>
+                          <p class="card-text">The Bath Christmas Market will return to the heart of Bath stretching across the historic city centre. As you wander through the cobblestone streets, you'll be immersed in the festive ambiance, while discovering an array of unique handmade gifts from independent makers from Bath and beyond.</p>
+                          <button class="primary-btn p-2 mt-auto" onclick="location.href='activities/info-pages/market-3-info.html'">More Info</button>
+                      </div>
+                  </div>
+              </div>
           </div>
-
-        </div>
       </div>
-    </div>
+  </div>
 
 
          <!-- Illuminations -->
-         <div class="category" id="illuminations">
+         <div class="category container" id="illuminations">
 
           <h2 class="fw-bolder text-center">Illuminations</h2>
   
@@ -204,7 +203,7 @@
   
    
         <!-- Ice Rinks -->
-        <div class="category" id="ice-rinks">
+        <div class="category container" id="ice-rinks">
 
           <h2 class="fw-bolder text-center">Ice Rinks</h2>
   
@@ -259,7 +258,7 @@
         
    
         <!-- Christmas Experiences -->
-        <div class="category" id="christmas-experiences">
+        <div class="category container" id="christmas-experiences">
 
           <h2 class="fw-bolder text-center">Christmas Experiences</h2>
   
@@ -311,7 +310,7 @@
    
 
       <!-- Santa Visits -->
-      <div class="category" id="santa-visits">
+      <div class="category container" id="santa-visits">
         <h2 class="fw-bolder text-center">Santa Visits</h2>
         <div class="row">
           <!-- Card 1 -->
